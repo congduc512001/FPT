@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="menu-top1">
+      <div class="menu-top2">
+        <div class="">
+          <img class="logounion" src="./img/FPT Software.svg" alt="" />
+        </div>
+        <div class="menu-top3">
+          <img class="menu-svg" src="./img/menu.png" alt="" />
+        </div>
+      </div>
+      <div class="menu-bottom1">
+        <div class="menu-bottom2">
+          <ul class="menu-b">
+            <li><a href="" class="menu-1">Home</a></li>
+            <li><a href="" class="menu-1">Popular</a></li>
+            <li><a href="" class="menu-1">Image</a></li>
+            <li><a href="" class="menu-1">Document</a></li>
+            <li><a href="" class="menu-1">Video</a></li>
+            <li><a href="" class="menu-1">Other</a></li>
+            <li><a href="" class="menu-1">Support</a></li>
+          </ul>
+        </div>
+        <div class="menu-bottom3"></div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(document).on("click", ".menu-top3", function () {
+          $(".menu-top1").toggleClass("open");
+        });
+        $(document).on("click", ".menu-bottom3", function () {
+          $(".menu-top1").removeClass("open");
+        });
+      });
+    </script>
+    <div class="header">
+      <div class="header__max">
+        <img src="./img/FPT Software.svg" alt="" />
+        <div class="container">
+          <div class="header__menu">
+            <ul class="header__top">
+              <li><a class="header__top-one" href="">Home</a></li>
+              <li><a class="header__top-one" href="">Popular</a></li>
+              <li><a class="header__top-one" href="">Image</a></li>
+              <li><a class="header__top-one" href="">Document</a></li>
+              <li><a class="header__top-one" href="">Video</a></li>
+              <li><a class="header__top-one" href="">Other</a></li>
+              <li><a class="header__top-one" href="">Support</a></li>
+              <li><img src="./img/LT.svg" alt="" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner d-flex align-items-center">
+      <div class="banner-img">
+        <img src="img/bannerhomepage.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div class="banner__max">
+            <div class="banner__top">
+              <div class="banner__top-one">The file you need is here.</div>
+              <div class="banner__top-two">Search for it!</div>
+            </div>
+            <div class="banner__min">
+              <select
+                class="banner__min-one"
+                id="floatingSelect"
+                aria-label="Floating label select example"
+              >
+                <option selected>All</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <div class="banner__min-trong">
+                <span></span>
+              </div>
+              <input
+                type="text"
+                class="banner__min-two"
+                placeholder="Find anything you need"
+              />
+              <button class="banner__min-three">
+                <img src="./img/outlined.svg" alt="" />
+                <div class="banner__text">Search</div>
+              </button>
+            </div>
+            <div class="banner__most">
+              <div class="banner__most-text">Most search:</div>
+              <ul class="banner__fpt">
+                <li class="banner__fpt-one">FPT</li>
+                <li class="banner__fpt-one">FPT Software</li>
+                <li class="banner__fpt-one">FPT Software Branding</li>
+                <li class="banner__fpt-one">Akajob</li>
+                <li class="banner__fpt-one">transport</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popular">
+      <div class="container">
+        <div class="popular__max">
+          <div class="popular__top">
+            <div class="popular__top-one">Popular</div>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img class="" src="./img/popolar2.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img-video">
+                    <img class="max" src="./img/popolar1.png" alt="" />
+                    <img class="play" src="./img/play.svg" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/video.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name Video</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Mb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">MP4</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img-video">
+                    <img class="max" src="./img/popolar1.png" alt="" />
+                    <img class="play" src="./img/play.svg" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/video.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name Video</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Mb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">MP4</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper__button">
+              <img
+                class="swiper__button-left"
+                src="./img/buttontrai.svg"
+                alt=""
+              />
+              <img
+                class="swiper__button-right"
+                src="./img/buttonphai.svg"
+                alt=""
+              />
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+          <script>
+            var swiper = new Swiper(".popular .mySwiper", {
+              slidesPerView: 4,
+              spaceBetween: 30,
+
+              slidesPerGroup: 1,
+              freeMode: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper__button-right",
+                prevEl: ".swiper__button-left",
+              },
+              breakpoints: {
+                // Nhỏ nhất bị ảnh hưởng là 0 - mobile đứng
+                0: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                // Nhỏ nhất bị ảnh hưởng là 451px - mobile ngang
+                451: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                // Nhỏ nhất bị ảnh hưởng là 768px - ipad đứng
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+                // Nhỏ nhất bị ảnh hưởng là 993px - ipad ngang
+                993: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+              },
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+    <div class="about">
+      <div class="container">
+        <div class="about__max">
+          <div class="about__text">
+            <div class="about__text-one">About FPT & FPT Software</div>
+            <div class="about__text-two">
+              To be a company guided by technological innovations, committed to
+              the highest level of customer satisfaction, contributing to
+              national prosperity and providing its employees with the most
+              favorable working environment possible, thus enabling them to
+              reach their full potential in their professional careers as well
+              as their morale.
+            </div>
+          </div>
+          <div></div>
+          <div class="about__chum">
+            <div class="about__fpt">
+              <img src="./img/fpthi.png" alt="" />
+            </div>
+            <div></div>
+            <div class="about__fsoft">
+              <img src="./img/fsofw.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="category">
+      <div class="container">
+        <div class="category__max">
+          <div class="category__top">
+            <div class="category__top-one">Category</div>
+          </div>
+          <div class="category__swiper">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="category__product">
+                    <div class="category__amet">
+                      <img src="./img/products4.png" alt="" />
+                      <div class="category__amet-one">Services</div>
+                      <div class="category__amet-two">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                      </div>
+                      <div class="category__amet-three">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet.
+                      </div>
+                      <div class="category__end">
+                        <div class="category__end-one">Learn more</div>
+                        <img src="./img/ngang.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category__product">
+                    <div class="category__amet">
+                      <img src="./img/products1.png" alt="" />
+                      <div class="category__amet-one">Product</div>
+                      <div class="category__amet-two">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                      </div>
+                      <div class="category__amet-three">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet.
+                      </div>
+                      <div class="category__end">
+                        <div class="category__end-one">Learn more</div>
+                        <img src="./img/ngang.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category__product">
+                    <div class="category__amet">
+                      <img src="./img/products2.png" alt="" />
+                      <div class="category__amet-one">Publications</div>
+                      <div class="category__amet-two">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                      </div>
+                      <div class="category__amet-three">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet.
+                      </div>
+                      <div class="category__end">
+                        <div class="category__end-one">Learn more</div>
+                        <img src="./img/ngang.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category__product">
+                    <div class="category__amet">
+                      <img src="./img/products3.png" alt="" />
+                      <div class="category__amet-one">Resources</div>
+                      <div class="category__amet-two">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                      </div>
+                      <div class="category__amet-three">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet.
+                      </div>
+                      <div class="category__end">
+                        <div class="category__end-one">Learn more</div>
+                        <img src="./img/ngang.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category__product">
+                    <div class="category__amet">
+                      <img src="./img/products4.png" alt="" />
+                      <div class="category__amet-one">Templates</div>
+                      <div class="category__amet-two">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                      </div>
+                      <div class="category__amet-three">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet.
+                      </div>
+                      <div class="category__end">
+                        <div class="category__end-one">Learn more</div>
+                        <img src="./img/ngang.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category__product">
+                    <div class="category__amet">
+                      <img src="./img/products4.png" alt="" />
+                      <div class="category__amet-one">Services</div>
+                      <div class="category__amet-two">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                      </div>
+                      <div class="category__amet-three">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet.
+                      </div>
+                      <div class="category__end">
+                        <div class="category__end-one">Learn more</div>
+                        <img src="./img/ngang.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category__product">
+                    <div class="category__amet">
+                      <img src="./img/products1.png" alt="" />
+                      <div class="category__amet-one">Product</div>
+                      <div class="category__amet-two">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                      </div>
+                      <div class="category__amet-three">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet.
+                      </div>
+                      <div class="category__end">
+                        <div class="category__end-one">Learn more</div>
+                        <img src="./img/ngang.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category__product">
+                    <div class="category__amet">
+                      <img src="./img/products2.png" alt="" />
+                      <div class="category__amet-one">Publications</div>
+                      <div class="category__amet-two">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                      </div>
+                      <div class="category__amet-three">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet.
+                      </div>
+                      <div class="category__end">
+                        <div class="category__end-one">Learn more</div>
+                        <img src="./img/ngang.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category__product">
+                    <div class="category__amet">
+                      <img src="./img/products3.png" alt="" />
+                      <div class="category__amet-one">Resources</div>
+                      <div class="category__amet-two">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                      </div>
+                      <div class="category__amet-three">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet.
+                      </div>
+                      <div class="category__end">
+                        <div class="category__end-one">Learn more</div>
+                        <img src="./img/ngang.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="category__product">
+                    <div class="category__amet">
+                      <img src="./img/products4.png" alt="" />
+                      <div class="category__amet-one">Templates</div>
+                      <div class="category__amet-two">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint.
+                      </div>
+                      <div class="category__amet-three">
+                        Amet minim mollit non deserunt ullamco est sit aliqua
+                        dolor do amet sint. Velit officia consequat duis enim
+                        velit mollit. Exercitation veniam consequat sunt nostrud
+                        amet.
+                      </div>
+                      <div class="category__end">
+                        <div class="category__end-one">Learn more</div>
+                        <img src="./img/ngang.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper__button">
+                <img
+                  class="swiper__button-left"
+                  src="./img/buttontrai.svg"
+                  alt=""
+                />
+                <img
+                  class="swiper__button-right"
+                  src="./img/buttonphai.svg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+            <script>
+              var swiper = new Swiper(".category .mySwiper", {
+                freeMode: true,
+                pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+                },
+                navigation: {
+                  nextEl: ".swiper__button-right",
+                  prevEl: ".swiper__button-left",
+                },
+                breakpoints: {
+                  // Nhỏ nhất bị ảnh hưởng là 0 - mobile đứng
+                  0: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                  },
+                  // Nhỏ nhất bị ảnh hưởng là 451px - mobile ngang
+                  451: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  // Nhỏ nhất bị ảnh hưởng là 768px - ipad đứng
+                  768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                  },
+                  // Nhỏ nhất bị ảnh hưởng là 993px - ipad ngang
+                  993: {
+                    slidesPerView: 4,
+                    spaceBetween: 30,
+                  },
+                },
+              });
+            </script>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer_box">
+          <div class="footer__top">
+            <img src="./img/FPT Software H@2x 1.svg" alt="" />
+          </div>
+          <div class="footer__max">
+            <div class="footer__popular">
+              <div class="footer__popular-text">Popular</div>
+              <ul>
+                <li class="footer__popular-one">FSfoft Overview</li>
+                <li class="footer__popular-one">Service offering</li>
+                <li class="footer__popular-one">Case Studies</li>
+                <li class="footer__popular-one">Akasuite</li>
+                <li class="footer__popular-one">Finnance Report</li>
+              </ul>
+            </div>
+            <div class="footer__popular">
+              <div class="footer__popular-text">About Fsoft</div>
+              <ul>
+                <li class="footer__popular-one">FSfoft Overview</li>
+                <li class="footer__popular-one">Service offering</li>
+                <li class="footer__popular-one">Case Studies</li>
+                <li class="footer__popular-one">Akasuite</li>
+                <li class="footer__popular-one">Finnance Report</li>
+              </ul>
+            </div>
+            <div class="footer__popular">
+              <div class="footer__popular-text">Services</div>
+              <ul>
+                <li class="footer__popular-one">Digital Consulting</li>
+                <li class="footer__popular-one">Digital Technology</li>
+                <li class="footer__popular-one">Outsourcing</li>
+              </ul>
+            </div>
+            <div class="footer__popular">
+              <div class="footer__popular-text">Product</div>
+              <ul>
+                <li class="footer__popular-one">akaSuite</li>
+                <li class="footer__popular-one">Leaflet/Brochure</li>
+                <li class="footer__popular-one">Video</li>
+              </ul>
+            </div>
+            <div class="footer__popular">
+              <div class="footer__popular-text">Publications</div>
+              <ul>
+                <li class="footer__popular-one">Case Studies</li>
+                <li class="footer__popular-one">Whitepapers</li>
+                <li class="footer__popular-one">Inforgraphics</li>
+              </ul>
+            </div>
+            <div class="footer__popular">
+              <div class="footer__popular-text">Resources</div>
+              <ul>
+                <li class="footer__popular-one">Vertical Industries</li>
+                <li class="footer__popular-one">Sales Materials</li>
+                <li class="footer__popular-one">Technology</li>
+                <li class="footer__popular-one">Events/ Conferences</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border">
+      <div class="border__max">
+        <div class="border__orange"></div>
+        <div class="border__blue"></div>
+        <div class="border__green"></div>
+      </div>
+    </div>
+  </body>
+</html>

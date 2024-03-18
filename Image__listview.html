@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="menu-top1">
+      <div class="menu-top2">
+        <div class="">
+          <img class="logounion" src="./img/FPT Software.svg" alt="" />
+        </div>
+        <div class="menu-top3">
+          <img class="menu-svg" src="./img/menu.png" alt="" />
+        </div>
+      </div>
+      <div class="menu-bottom1">
+        <div class="menu-bottom2">
+          <ul class="menu-b">
+            <li><a href="" class="menu-1">Home</a></li>
+            <li><a href="" class="menu-1">Popular</a></li>
+            <li><a href="" class="menu-1">Image</a></li>
+            <li><a href="" class="menu-1">Document</a></li>
+            <li><a href="" class="menu-1">Video</a></li>
+            <li><a href="" class="menu-1">Other</a></li>
+            <li><a href="" class="menu-1">Support</a></li>
+          </ul>
+        </div>
+        <div class="menu-bottom3"></div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(document).on("click", ".menu-top3", function () {
+          $(".menu-top1").toggleClass("open");
+        });
+        $(document).on("click", ".menu-bottom3", function () {
+          $(".menu-top1").removeClass("open");
+        });
+      });
+    </script>
+    <div class="header">
+      <div class="header__max">
+        <img src="./img/FPT Software.svg" alt="" />
+        <div class="container">
+          <div class="header__menu">
+            <ul class="header__top">
+              <li><a class="header__top-one" href="">Home</a></li>
+              <li><a class="header__top-one" href="">Popular</a></li>
+              <li><a class="header__top-one" href="">Image</a></li>
+              <li><a class="header__top-one" href="">Document</a></li>
+              <li><a class="header__top-one" href="">Video</a></li>
+              <li><a class="header__top-one" href="">Other</a></li>
+              <li><a class="header__top-one" href="">Support</a></li>
+              <li><img src="./img/LT.svg" alt="" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bannerpopular d-flex align-items-center">
+      <div class="banner-img">
+        <img src="img/bannerimg.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div class="banner__max">
+            <div class="banner__top">
+              <div class="banner__top-two">Image Assets</div>
+              <div class="banner__top-one">
+                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+                tempor adipiscing Lorem ipsum dolor sit amet, consectetur elit,
+                sed do eiusmod tempor
+              </div>
+            </div>
+            <div class="banner__min">
+              <select
+                class="banner__min-one"
+                id="floatingSelect"
+                aria-label="Floating label select example"
+              >
+                <option selected>Image</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <div class="banner__min-trong">
+                <span></span>
+              </div>
+              <div class="banner__input">
+                <input
+                  type="text"
+                  placeholder="Logistic"
+                />
+                <div class="banner__input-one">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M19.1944 4.80561C19.4873 5.0985 19.4873 5.57337 19.1944 5.86627L5.86597 19.1947C5.57307 19.4876 5.0982 19.4876 4.80531 19.1947C4.51241 18.9018 4.51241 18.4269 4.80531 18.134L18.1337 4.80561C18.4266 4.51271 18.9015 4.51271 19.1944 4.80561Z"
+                      fill="#333333"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M19.1944 19.1947C18.9015 19.4876 18.4266 19.4876 18.1337 19.1947L4.80531 5.86627C4.51241 5.57337 4.51241 5.0985 4.80531 4.80561C5.0982 4.51271 5.57307 4.51271 5.86597 4.80561L19.1944 18.134C19.4873 18.4269 19.4873 18.9018 19.1944 19.1947Z"
+                      fill="#333333"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <button class="banner__min-three">
+                <img src="./img/outlined.svg" alt="" />
+              </button>
+            </div>
+            <div class="banner__most">
+              <div class="banner__most-text">Most search:</div>
+              <ul class="banner__fpt">
+                <li class="banner__fpt-one">FPT</li>
+                <li class="banner__fpt-one">FPT Software</li>
+                <li class="banner__fpt-one">FPT Software Branding</li>
+                <li class="banner__fpt-one">Akajob</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="name">
+      <div class="container">
+        <div class="overview__max">
+          <div class="overview__top">
+            <div class="overview__menu">
+              <div class="overview__menu-one">Image</div>
+            </div>
+            <div class="overview__tong">
+              <select
+                class="bannerpopular__min-one"
+                id="floatingSelect"
+                aria-label="Floating label select example"
+              >
+                <option class="one" selected>Filter</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+              <img src="./img/buttext.svg" alt="" />
+              <div class="overview__button">
+                <img src="./img/hihi.svg" alt="" />
+                <div class="overview__button-text">Download All</div>
+              </div>
+            </div>
+          </div>
+          <div class="overview__last">
+            <div class="overview__chillmax">
+              <div class="overview__chill">
+                <div class="overview__chill-one">Name</div>
+                <img src="./img/muitenxuong.svg" alt="" />
+              </div>
+              <div class="overview__centermax">
+                <div class="overview__center">
+                  <div class="overview__center-one">Last edited</div>
+                  <img src="./img/muitenlen.svg" alt="" />
+                </div>
+              </div>
+              <div class="overview__end">
+                <div class="overview__end-one">Size</div>
+              </div>
+            </div>
+            <div class="overview__date">
+              <div class="overview__folders">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
+                    fill="#666666"
+                  />
+                  <path
+                    d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
+                    fill="#999999"
+                  />
+                </svg>
+                <div class="overview__folders-one">Name folders</div>
+              </div>
+              <div class="overview__monday">
+                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              </div>
+              <div class="overview__sunday">
+                <div class="overview__sunday-one">---</div>
+              </div>
+            </div>
+            <div class="overview__date">
+              <div class="overview__folders">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
+                    fill="#666666"
+                  />
+                  <path
+                    d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
+                    fill="#999999"
+                  />
+                </svg>
+                <div class="overview__folders-one">Name folders</div>
+              </div>
+              <div class="overview__monday">
+                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              </div>
+              <div class="overview__sunday">
+                <div class="overview__sunday-one">---</div>
+              </div>
+            </div>
+            <div class="overview__date">
+              <div class="overview__folders">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
+                    fill="#666666"
+                  />
+                  <path
+                    d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
+                    fill="#999999"
+                  />
+                </svg>
+                <div class="overview__folders-one">Name folders</div>
+              </div>
+              <div class="overview__monday">
+                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              </div>
+              <div class="overview__sunday">
+                <div class="overview__sunday-one">---</div>
+              </div>
+            </div>
+            <div class="overview__date">
+              <div class="overview__folders">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
+                    fill="#666666"
+                  />
+                  <path
+                    d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
+                    fill="#999999"
+                  />
+                </svg>
+                <div class="overview__folders-one">Name folders</div>
+              </div>
+              <div class="overview__monday">
+                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              </div>
+              <div class="overview__sunday">
+                <div class="overview__sunday-one">---</div>
+              </div>
+            </div>
+            <div class="overview__date">
+              <div class="overview__folders">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
+                    fill="#666666"
+                  />
+                  <path
+                    d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
+                    fill="#999999"
+                  />
+                </svg>
+                <div class="overview__folders-one">Name folders</div>
+              </div>
+              <div class="overview__monday">
+                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              </div>
+              <div class="overview__sunday">
+                <div class="overview__sunday-one">---</div>
+              </div>
+            </div>
+            <div class="overview__dateok">
+              <div class="overview__foldersok">
+                <img src="./img/mini.png" alt="" />
+                <div class="overview__folders-one">Name folders</div>
+              </div>
+              <div class="overview__monday">
+                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              </div>
+              <div class="overview__sunday">
+                <div class="overview__sunday-one">1.45 Mb</div>
+              </div>
+            </div>
+            <div class="overview__dateok">
+              <div class="overview__foldersok">
+                <img src="./img/mini.png" alt="" />
+                <div class="overview__folders-one">Name folders</div>
+              </div>
+              <div class="overview__monday">
+                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              </div>
+              <div class="overview__sunday">
+                <div class="overview__sunday-one">1.45 Mb</div>
+              </div>
+            </div>
+            <div class="overview__dateok">
+              <div class="overview__foldersok">
+                <img src="./img/mini.png" alt="" />
+                <div class="overview__folders-one">Name folders</div>
+              </div>
+              <div class="overview__monday">
+                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              </div>
+              <div class="overview__sunday">
+                <div class="overview__sunday-one">1.45 Mb</div>
+              </div>
+            </div>
+            <div class="overview__dateok">
+              <div class="overview__foldersok">
+                <img src="./img/mini.png" alt="" />
+                <div class="overview__folders-one">Name folders</div>
+              </div>
+              <div class="overview__monday">
+                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              </div>
+              <div class="overview__sunday">
+                <div class="overview__sunday-one">1.45 Mb</div>
+              </div>
+            </div>
+            <div class="overview__dateok">
+              <div class="overview__foldersok">
+                <img src="./img/mini.png" alt="" />
+                <div class="overview__folders-one">Name folders</div>
+              </div>
+              <div class="overview__monday">
+                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              </div>
+              <div class="overview__sunday">
+                <div class="overview__sunday-one">1.45 Mb</div>
+              </div>
+            </div>
+            <div class="overview__dateok">
+              <div class="overview__foldersok">
+                <img src="./img/mini.png" alt="" />
+                <div class="overview__folders-one">Name folders</div>
+              </div>
+              <div class="overview__monday">
+                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              </div>
+              <div class="overview__sunday">
+                <div class="overview__sunday-one">1.45 Mb</div>
+              </div>
+            </div>
+            <div class="overview__dateok">
+              <div class="overview__foldersok">
+                <img src="./img/mini.png" alt="" />
+                <div class="overview__folders-one">Name folders</div>
+              </div>
+              <div class="overview__monday">
+                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              </div>
+              <div class="overview__sunday">
+                <div class="overview__sunday-one">1.45 Mb</div>
+              </div>
+            </div>
+            <div class="overview__dateok">
+              <div class="overview__foldersok">
+                <img src="./img/mini.png" alt="" />
+                <div class="overview__folders-one">Name folders</div>
+              </div>
+              <div class="overview__monday">
+                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              </div>
+              <div class="overview__sunday">
+                <div class="overview__sunday-one">1.45 Mb</div>
+              </div>
+            </div>
+            <div class="overview__dateok">
+              <div class="overview__foldersok">
+                <img src="./img/mini.png" alt="" />
+                <div class="overview__folders-one">Name folders</div>
+              </div>
+              <div class="overview__monday">
+                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              </div>
+              <div class="overview__sunday">
+                <div class="overview__sunday-one">1.45 Mb</div>
+              </div>
+            </div>
+            <div class="overview__dateok">
+              <div class="overview__foldersok">
+                <img src="./img/mini.png" alt="" />
+                <div class="overview__folders-one">Name folders</div>
+              </div>
+              <div class="overview__monday">
+                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              </div>
+              <div class="overview__sunday">
+                <div class="overview__sunday-one">1.45 Mb</div>
+              </div>
+            </div>
+            <div class="overview__dateok">
+              <div class="overview__foldersok">
+                <img src="./img/mini.png" alt="" />
+                <div class="overview__folders-one">Name folders</div>
+              </div>
+              <div class="overview__monday">
+                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              </div>
+              <div class="overview__sunday">
+                <div class="overview__sunday-one">1.45 Mb</div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <div class="overview__loadmore">
+                <div class="overview__loadmore-text">Load more</div>
+                <img src="./img/xuong.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="recommended">
+      <div class="container">
+        <div class="popular__max">
+          <div class="popular__top">
+            <div class="popular__top-one">Recommended</div>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="popular__slider">
+                  <div class="popular__img">
+                    <img src="./img/popolar1.png" alt="" />
+                  </div>
+                  <div class="popular__end">
+                    <img src="./img/Vector.svg" alt="" />
+                    <div class="popular__text">
+                      <div class="popular__text-one">Name image</div>
+                      <div class="popular__min">
+                        <div class="popular__text-two">156 Kb</div>
+                        <img src="./img/Ellipse 7.svg" alt="" />
+                        <div class="popular__text-two">JPG</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper__button">
+              <img
+                class="swiper__button-left"
+                src="./img/buttontrai.svg"
+                alt=""
+              />
+              <img
+                class="swiper__button-right"
+                src="./img/buttonphai.svg"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+          <script>
+            var swiper = new Swiper(".recommended .mySwiper", {
+              slidesPerView: 4,
+              spaceBetween: 30,
+
+              slidesPerGroup: 1,
+              freeMode: true,
+              pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+              },
+              navigation: {
+                nextEl: ".swiper__button-right",
+                prevEl: ".swiper__button-left",
+              },
+              breakpoints: {
+                // Nhỏ nhất bị ảnh hưởng là 0 - mobile đứng
+                0: {
+                  slidesPerView: 1,
+                  spaceBetween: 20,
+                },
+                // Nhỏ nhất bị ảnh hưởng là 451px - mobile ngang
+                451: {
+                  slidesPerView: 2,
+                  spaceBetween: 20,
+                },
+                // Nhỏ nhất bị ảnh hưởng là 768px - ipad đứng
+                768: {
+                  slidesPerView: 3,
+                  spaceBetween: 20,
+                },
+                // Nhỏ nhất bị ảnh hưởng là 993px - ipad ngang
+                993: {
+                  slidesPerView: 4,
+                  spaceBetween: 30,
+                },
+              },
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer_box">
+          <div class="footer__top">
+            <img src="./img/FPT Software H@2x 1.svg" alt="" />
+          </div>
+          <div class="footer__max">
+            <div class="footer__popular">
+              <div class="footer__popular-text">Popular</div>
+              <ul>
+                <li class="footer__popular-one">FSfoft Overview</li>
+                <li class="footer__popular-one">Service offering</li>
+                <li class="footer__popular-one">Case Studies</li>
+                <li class="footer__popular-one">Akasuite</li>
+                <li class="footer__popular-one">Finnance Report</li>
+              </ul>
+            </div>
+            <div class="footer__popular">
+              <div class="footer__popular-text">About Fsoft</div>
+              <ul>
+                <li class="footer__popular-one">FSfoft Overview</li>
+                <li class="footer__popular-one">Service offering</li>
+                <li class="footer__popular-one">Case Studies</li>
+                <li class="footer__popular-one">Akasuite</li>
+                <li class="footer__popular-one">Finnance Report</li>
+              </ul>
+            </div>
+            <div class="footer__popular">
+              <div class="footer__popular-text">Services</div>
+              <ul>
+                <li class="footer__popular-one">Digital Consulting</li>
+                <li class="footer__popular-one">Digital Technology</li>
+                <li class="footer__popular-one">Outsourcing</li>
+              </ul>
+            </div>
+            <div class="footer__popular">
+              <div class="footer__popular-text">Product</div>
+              <ul>
+                <li class="footer__popular-one">akaSuite</li>
+                <li class="footer__popular-one">Leaflet/Brochure</li>
+                <li class="footer__popular-one">Video</li>
+              </ul>
+            </div>
+            <div class="footer__popular">
+              <div class="footer__popular-text">Publications</div>
+              <ul>
+                <li class="footer__popular-one">Case Studies</li>
+                <li class="footer__popular-one">Whitepapers</li>
+                <li class="footer__popular-one">Inforgraphics</li>
+              </ul>
+            </div>
+            <div class="footer__popular">
+              <div class="footer__popular-text">Resources</div>
+              <ul>
+                <li class="footer__popular-one">Vertical Industries</li>
+                <li class="footer__popular-one">Sales Materials</li>
+                <li class="footer__popular-one">Technology</li>
+                <li class="footer__popular-one">Events/ Conferences</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border">
+      <div class="border__max">
+        <div class="border__orange"></div>
+        <div class="border__blue"></div>
+        <div class="border__green"></div>
+      </div>
+    </div>
+  </body>
+</html>

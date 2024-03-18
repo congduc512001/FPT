@@ -1,0 +1,2021 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="menu-top1">
+      <div class="menu-top2">
+        <div class="">
+          <img class="logounion" src="./img/FPT Software.svg" alt="" />
+        </div>
+        <div class="menu-top3">
+          <img class="menu-svg" src="./img/menu.png" alt="" />
+        </div>
+      </div>
+      <div class="menu-bottom1">
+        <div class="menu-bottom2">
+          <ul class="menu-b">
+            <li><a href="" class="menu-1">Home</a></li>
+            <li><a href="" class="menu-1">Popular</a></li>
+            <li><a href="" class="menu-1">Image</a></li>
+            <li><a href="" class="menu-1">Document</a></li>
+            <li><a href="" class="menu-1">Video</a></li>
+            <li><a href="" class="menu-1">Other</a></li>
+            <li><a href="" class="menu-1">Support</a></li>
+          </ul>
+        </div>
+        <div class="menu-bottom3"></div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(document).on("click", ".menu-top3", function () {
+          $(".menu-top1").toggleClass("open");
+        });
+        $(document).on("click", ".menu-bottom3", function () {
+          $(".menu-top1").removeClass("open");
+        });
+      });
+    </script>
+    <div class="header">
+      <div class="header__max">
+        <img src="./img/FPT Software.svg" alt="" />
+        <div class="container">
+          <div class="header__menuone">
+            <div class="header__input">
+              <div class="header__input-svg">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.90395 2.41159C4.79347 1.81724 5.83925 1.5 6.90907 1.5V2L6.9091 1.5C8.34363 1.50009 9.71939 2.07 10.7338 3.08437C11.7481 4.09874 12.318 5.47449 12.3181 6.90903V6.90906C12.3181 7.97887 12.0009 9.02466 11.4065 9.91418C10.8122 10.8037 9.9674 11.497 8.97902 11.9064C7.99065 12.3158 6.90307 12.4229 5.85381 12.2142C4.80455 12.0055 3.84075 11.4903 3.08428 10.7338C2.32781 9.97738 1.81265 9.01357 1.60394 7.96432C1.39523 6.91506 1.50234 5.82748 1.91174 4.8391C2.32114 3.85073 3.01444 3.00595 3.90395 2.41159ZM6.90907 2.5C8.0784 2.50008 9.19981 2.96463 10.0267 3.79148C10.8535 4.61832 11.318 5.73973 11.3181 6.90906M6.90903 2.5C6.03701 2.50001 5.18458 2.75859 4.45952 3.24306C3.73445 3.72754 3.16933 4.41614 2.83562 5.22179C2.50191 6.02744 2.4146 6.91395 2.58472 7.76923C2.75485 8.6245 3.17477 9.41012 3.79139 10.0267C4.40801 10.6434 5.19363 11.0633 6.0489 11.2334C6.90417 11.4035 7.79069 11.3162 8.59634 10.9825C9.40199 10.6488 10.0906 10.0837 10.5751 9.35861C11.0595 8.63355 11.3181 7.78111 11.3181 6.90909"
+                    fill="#0071F0"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.2182 10.2187C10.4135 10.0235 10.7301 10.0235 10.9253 10.2187L14.3538 13.6471C14.549 13.8424 14.549 14.159 14.3538 14.3543C14.1585 14.5495 13.8419 14.5495 13.6467 14.3543L10.2182 10.9258C10.023 10.7306 10.023 10.414 10.2182 10.2187Z"
+                    fill="#0071F0"
+                  />
+                </svg>
+                <input type="text" placeholder="Search anything you need" />
+              </div>
+            </div>
+            <ul class="header__top">
+              <li><a class="header__top-one" href="">Home</a></li>
+              <li><a class="header__top-one" href="">Popular</a></li>
+              <li><a class="header__top-one" href="">Image</a></li>
+              <li><a class="header__top-one" href="">Document</a></li>
+              <li><a class="header__top-one" href="">Video</a></li>
+              <li><a class="header__top-one" href="">Other</a></li>
+              <li><a class="header__top-one" href="">Support</a></li>
+              <li><img src="./img/LT.svg" alt="" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="document__folder">
+      <div class="container">
+        <div class="document__max">
+          <div class="document__top">
+            <div class="document__namefolders">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.233 4.4545C12.6723 4.89384 12.6723 5.60616 12.233 6.0455L6.27849 12L12.233 17.9545C12.6723 18.3938 12.6723 19.1062 12.233 19.5455C11.7937 19.9848 11.0813 19.9848 10.642 19.5455L3.892 12.7955C3.45267 12.3562 3.45267 11.6438 3.892 11.2045L10.642 4.4545C11.0813 4.01517 11.7937 4.01517 12.233 4.4545Z"
+                  fill="#333333"
+                ></path>
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.5 12C4.5 11.3787 5.00368 10.875 5.625 10.875H19.3125C19.9338 10.875 20.4375 11.3787 20.4375 12C20.4375 12.6213 19.9338 13.125 19.3125 13.125H5.625C5.00368 13.125 4.5 12.6213 4.5 12Z"
+                  fill="#333333"
+                ></path>
+              </svg>
+              <div class="document__foldersok">
+                <div class="document__folders-one">Name folders</div>
+                <div class="document__folders-two">/</div>
+                <div class="document__folders-two">Name folders</div>
+              </div>
+            </div>
+            <div class="document__end">
+              <svg
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  x="0.5"
+                  y="0.5"
+                  width="39"
+                  height="39"
+                  rx="7.5"
+                  stroke="#4D4D4D"
+                ></rect>
+                <g clip-path="url(#clip0_415_37061)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M14.4822 11.9822C14.9511 11.5134 15.587 11.25 16.25 11.25H23.75C24.413 11.25 25.0489 11.5134 25.5178 11.9822C25.9866 12.4511 26.25 13.087 26.25 13.75V28.125C26.25 28.3711 26.1056 28.5943 25.881 28.6952C25.6565 28.796 25.3937 28.7556 25.2098 28.5921L20 23.9612L14.7902 28.5921C14.6063 28.7556 14.3435 28.796 14.119 28.6952C13.8944 28.5943 13.75 28.3711 13.75 28.125V13.75C13.75 13.087 14.0134 12.4511 14.4822 11.9822ZM16.25 12.5C15.9185 12.5 15.6005 12.6317 15.3661 12.8661C15.1317 13.1005 15 13.4185 15 13.75V26.7332L19.5848 22.6579C19.8216 22.4474 20.1784 22.4474 20.4152 22.6579L25 26.7332V13.75C25 13.4185 24.8683 13.1005 24.6339 12.8661C24.3995 12.6317 24.0815 12.5 23.75 12.5H16.25Z"
+                    fill="#4D4D4D"
+                  ></path>
+                  <path
+                    d="M15.3661 12.8661C15.6005 12.6317 15.9185 12.5 16.25 12.5H23.75C24.0815 12.5 24.3995 12.6317 24.6339 12.8661C24.8683 13.1005 25 13.4185 25 13.75V26.7332L20.4152 22.6579C20.1784 22.4474 19.8216 22.4474 19.5848 22.6579L15 26.7332V13.75C15 13.4185 15.1317 13.1005 15.3661 12.8661Z"
+                    fill="#4D4D4D"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_415_37061">
+                    <rect
+                      width="36"
+                      height="24"
+                      fill="white"
+                      transform="translate(2 8)"
+                    ></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+              <div class="document__button">
+                <svg
+                  width="21"
+                  height="20"
+                  viewBox="0 0 21 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5.8125 7.5C5.56386 7.5 5.3254 7.59877 5.14959 7.77459C4.97377 7.9504 4.875 8.18886 4.875 8.4375V16.5625C4.875 16.8111 4.97377 17.0496 5.14959 17.2254C5.3254 17.4012 5.56386 17.5 5.8125 17.5H15.1875C15.4361 17.5 15.6746 17.4012 15.8504 17.2254C16.0262 17.0496 16.125 16.8111 16.125 16.5625V8.4375C16.125 8.18886 16.0262 7.9504 15.8504 7.77459C15.6746 7.59877 15.4361 7.5 15.1875 7.5H13.625C13.2798 7.5 13 7.22018 13 6.875C13 6.52982 13.2798 6.25 13.625 6.25H15.1875C15.7677 6.25 16.3241 6.48047 16.7343 6.8907C17.1445 7.30094 17.375 7.85734 17.375 8.4375V16.5625C17.375 17.1427 17.1445 17.6991 16.7343 18.1093C16.3241 18.5195 15.7677 18.75 15.1875 18.75H5.8125C5.23234 18.75 4.67594 18.5195 4.2657 18.1093C3.85547 17.6991 3.625 17.1427 3.625 16.5625V8.4375C3.625 7.85734 3.85547 7.30094 4.2657 6.8907C4.67594 6.48047 5.23234 6.25 5.8125 6.25H7.375C7.72018 6.25 8 6.52982 8 6.875C8 7.22018 7.72018 7.5 7.375 7.5H5.8125Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M6.93306 10.1831C7.17714 9.93898 7.57286 9.93898 7.81694 10.1831L10.5 12.8661L13.1831 10.1831C13.4271 9.93898 13.8229 9.93898 14.0669 10.1831C14.311 10.4271 14.311 10.8229 14.0669 11.0669L10.9419 14.1919C10.6979 14.436 10.3021 14.436 10.0581 14.1919L6.93306 11.0669C6.68898 10.8229 6.68898 10.4271 6.93306 10.1831Z"
+                    fill="white"
+                  ></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.5 1.25C10.8452 1.25 11.125 1.52982 11.125 1.875V13.125C11.125 13.4702 10.8452 13.75 10.5 13.75C10.1548 13.75 9.875 13.4702 9.875 13.125V1.875C9.875 1.52982 10.1548 1.25 10.5 1.25Z"
+                    fill="white"
+                  ></path>
+                </svg>
+                <div class="document__button-text">Download folder</div>
+              </div>
+            </div>
+          </div>
+          <div class="document__folder">
+            <div class="document__text">
+              <div class="document__text-one">Folder</div>
+            </div>
+            <div class="document__name">
+              <div class="document__folders">
+                <div class="document__service">
+                  <div class="document__you">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
+                        fill="#666666"
+                      ></path>
+                      <path
+                        d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
+                        fill="#999999"
+                      ></path>
+                    </svg>
+                    <div class="document__you-one">Name folders</div>
+                  </div>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 8C6.5 7.17157 7.17157 6.5 8 6.5C8.82843 6.5 9.5 7.17157 9.5 8C9.5 8.82843 8.82843 9.5 8 9.5C7.17157 9.5 6.5 8.82843 6.5 8Z"
+                      fill="#CCCCCC"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 13C6.5 12.1716 7.17157 11.5 8 11.5C8.82843 11.5 9.5 12.1716 9.5 13C9.5 13.8284 8.82843 14.5 8 14.5C7.17157 14.5 6.5 13.8284 6.5 13Z"
+                      fill="#CCCCCC"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 3C6.5 2.17157 7.17157 1.5 8 1.5C8.82843 1.5 9.5 2.17157 9.5 3C9.5 3.82843 8.82843 4.5 8 4.5C7.17157 4.5 6.5 3.82843 6.5 3Z"
+                      fill="#CCCCCC"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="document__service">
+                  <div class="document__you">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
+                        fill="#666666"
+                      ></path>
+                      <path
+                        d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
+                        fill="#999999"
+                      ></path>
+                    </svg>
+                    <div class="document__you-one">Name folders</div>
+                  </div>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 8C6.5 7.17157 7.17157 6.5 8 6.5C8.82843 6.5 9.5 7.17157 9.5 8C9.5 8.82843 8.82843 9.5 8 9.5C7.17157 9.5 6.5 8.82843 6.5 8Z"
+                      fill="#CCCCCC"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 13C6.5 12.1716 7.17157 11.5 8 11.5C8.82843 11.5 9.5 12.1716 9.5 13C9.5 13.8284 8.82843 14.5 8 14.5C7.17157 14.5 6.5 13.8284 6.5 13Z"
+                      fill="#CCCCCC"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 3C6.5 2.17157 7.17157 1.5 8 1.5C8.82843 1.5 9.5 2.17157 9.5 3C9.5 3.82843 8.82843 4.5 8 4.5C7.17157 4.5 6.5 3.82843 6.5 3Z"
+                      fill="#CCCCCC"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="document__service">
+                  <div class="document__you">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
+                        fill="#666666"
+                      ></path>
+                      <path
+                        d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
+                        fill="#999999"
+                      ></path>
+                    </svg>
+                    <div class="document__you-one">Name folders</div>
+                  </div>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 8C6.5 7.17157 7.17157 6.5 8 6.5C8.82843 6.5 9.5 7.17157 9.5 8C9.5 8.82843 8.82843 9.5 8 9.5C7.17157 9.5 6.5 8.82843 6.5 8Z"
+                      fill="#CCCCCC"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 13C6.5 12.1716 7.17157 11.5 8 11.5C8.82843 11.5 9.5 12.1716 9.5 13C9.5 13.8284 8.82843 14.5 8 14.5C7.17157 14.5 6.5 13.8284 6.5 13Z"
+                      fill="#CCCCCC"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 3C6.5 2.17157 7.17157 1.5 8 1.5C8.82843 1.5 9.5 2.17157 9.5 3C9.5 3.82843 8.82843 4.5 8 4.5C7.17157 4.5 6.5 3.82843 6.5 3Z"
+                      fill="#CCCCCC"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="document__service">
+                  <div class="document__you">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
+                        fill="#666666"
+                      ></path>
+                      <path
+                        d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
+                        fill="#999999"
+                      ></path>
+                    </svg>
+                    <div class="document__you-one">Name folders</div>
+                  </div>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 8C6.5 7.17157 7.17157 6.5 8 6.5C8.82843 6.5 9.5 7.17157 9.5 8C9.5 8.82843 8.82843 9.5 8 9.5C7.17157 9.5 6.5 8.82843 6.5 8Z"
+                      fill="#CCCCCC"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 13C6.5 12.1716 7.17157 11.5 8 11.5C8.82843 11.5 9.5 12.1716 9.5 13C9.5 13.8284 8.82843 14.5 8 14.5C7.17157 14.5 6.5 13.8284 6.5 13Z"
+                      fill="#CCCCCC"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 3C6.5 2.17157 7.17157 1.5 8 1.5C8.82843 1.5 9.5 2.17157 9.5 3C9.5 3.82843 8.82843 4.5 8 4.5C7.17157 4.5 6.5 3.82843 6.5 3Z"
+                      fill="#CCCCCC"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+              <div class="document__folders">
+                <div class="document__service">
+                  <div class="document__you">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
+                        fill="#666666"
+                      ></path>
+                      <path
+                        d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
+                        fill="#999999"
+                      ></path>
+                    </svg>
+                    <div class="document__you-one">Name folders</div>
+                  </div>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 8C6.5 7.17157 7.17157 6.5 8 6.5C8.82843 6.5 9.5 7.17157 9.5 8C9.5 8.82843 8.82843 9.5 8 9.5C7.17157 9.5 6.5 8.82843 6.5 8Z"
+                      fill="#CCCCCC"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 13C6.5 12.1716 7.17157 11.5 8 11.5C8.82843 11.5 9.5 12.1716 9.5 13C9.5 13.8284 8.82843 14.5 8 14.5C7.17157 14.5 6.5 13.8284 6.5 13Z"
+                      fill="#CCCCCC"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 3C6.5 2.17157 7.17157 1.5 8 1.5C8.82843 1.5 9.5 2.17157 9.5 3C9.5 3.82843 8.82843 4.5 8 4.5C7.17157 4.5 6.5 3.82843 6.5 3Z"
+                      fill="#CCCCCC"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="document__service">
+                  <div class="document__you">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
+                        fill="#666666"
+                      ></path>
+                      <path
+                        d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
+                        fill="#999999"
+                      ></path>
+                    </svg>
+                    <div class="document__you-one">Name folders</div>
+                  </div>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 8C6.5 7.17157 7.17157 6.5 8 6.5C8.82843 6.5 9.5 7.17157 9.5 8C9.5 8.82843 8.82843 9.5 8 9.5C7.17157 9.5 6.5 8.82843 6.5 8Z"
+                      fill="#CCCCCC"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 13C6.5 12.1716 7.17157 11.5 8 11.5C8.82843 11.5 9.5 12.1716 9.5 13C9.5 13.8284 8.82843 14.5 8 14.5C7.17157 14.5 6.5 13.8284 6.5 13Z"
+                      fill="#CCCCCC"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 3C6.5 2.17157 7.17157 1.5 8 1.5C8.82843 1.5 9.5 2.17157 9.5 3C9.5 3.82843 8.82843 4.5 8 4.5C7.17157 4.5 6.5 3.82843 6.5 3Z"
+                      fill="#CCCCCC"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="document__service">
+                  <div class="document__you">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
+                        fill="#666666"
+                      ></path>
+                      <path
+                        d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
+                        fill="#999999"
+                      ></path>
+                    </svg>
+                    <div class="document__you-one">Name folders</div>
+                  </div>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 8C6.5 7.17157 7.17157 6.5 8 6.5C8.82843 6.5 9.5 7.17157 9.5 8C9.5 8.82843 8.82843 9.5 8 9.5C7.17157 9.5 6.5 8.82843 6.5 8Z"
+                      fill="#CCCCCC"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 13C6.5 12.1716 7.17157 11.5 8 11.5C8.82843 11.5 9.5 12.1716 9.5 13C9.5 13.8284 8.82843 14.5 8 14.5C7.17157 14.5 6.5 13.8284 6.5 13Z"
+                      fill="#CCCCCC"
+                    ></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M6.5 3C6.5 2.17157 7.17157 1.5 8 1.5C8.82843 1.5 9.5 2.17157 9.5 3C9.5 3.82843 8.82843 4.5 8 4.5C7.17157 4.5 6.5 3.82843 6.5 3Z"
+                      fill="#CCCCCC"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="document__files">
+            <div class="document__filestext">
+              <div class="document__filestext-one">Files</div>
+            </div>
+            <div class="document__video">
+              <div class="document__bold">
+                <div class="document__con">
+                  <img class="document__img" src="./img/cart2.png" alt="" />
+                  <div class="document__end-on">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3659_9938)">
+                        <path
+                          d="M15.2344 5.67909C15.2344 5.80833 15.3395 5.91347 15.4688 5.91347H20.8272C20.6986 5.676 20.5331 5.45789 20.3343 5.26978L15.8145 0.99375C15.6391 0.827812 15.4437 0.689391 15.2344 0.580078V5.67909H15.2344Z"
+                          fill="#87C0FF"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.8281 5.67969C13.8281 6.58433 14.5641 7.32031 15.4688 7.32031H21.1406V21.7109C21.1406 23.1325 19.9841 24.2891 18.5625 24.2891H5.4375C4.01592 24.2891 2.85938 23.1325 2.85938 21.7109V2.86719C2.85938 1.44561 4.01592 0.289062 5.4375 0.289062H13.8281V5.67969ZM6 14.4319C5.52661 14.4319 5.14286 14.8157 5.14286 15.2891C5.14286 15.7624 5.52661 16.1462 6 16.1462H13.2857C13.7591 16.1462 14.1429 15.7624 14.1429 15.2891C14.1429 14.8157 13.7591 14.4319 13.2857 14.4319H6ZM6 18.7176C5.52661 18.7176 5.14286 19.1014 5.14286 19.5748C5.14286 20.0482 5.52661 20.4319 6 20.4319H13.2857C13.7591 20.4319 14.1429 20.0482 14.1429 19.5748C14.1429 19.1014 13.7591 18.7176 13.2857 18.7176H6Z"
+                          fill="#87C0FF"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3659_9938">
+                          <rect
+                            width="24"
+                            height="24"
+                            fill="white"
+                            transform="translate(0 0.289062)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <div class="document__meo">
+                      <div class="document__meo-one">FPT Brand Guidelines</div>
+                      <div class="document__min">
+                        <div class="document__meo-two">50MB</div>
+                        <svg
+                          width="4"
+                          height="5"
+                          viewBox="0 0 4 5"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="2"
+                            cy="2.28906"
+                            r="2"
+                            fill="#CCCCCC"
+                          ></circle>
+                        </svg>
+
+                        <div class="document__meo-two">DOC</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__con">
+                  <img class="document__img" src="./img/cart2.png" alt="" />
+                  <div class="document__end-on">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3659_9938)">
+                        <path
+                          d="M15.2344 5.67909C15.2344 5.80833 15.3395 5.91347 15.4688 5.91347H20.8272C20.6986 5.676 20.5331 5.45789 20.3343 5.26978L15.8145 0.99375C15.6391 0.827812 15.4437 0.689391 15.2344 0.580078V5.67909H15.2344Z"
+                          fill="#87C0FF"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.8281 5.67969C13.8281 6.58433 14.5641 7.32031 15.4688 7.32031H21.1406V21.7109C21.1406 23.1325 19.9841 24.2891 18.5625 24.2891H5.4375C4.01592 24.2891 2.85938 23.1325 2.85938 21.7109V2.86719C2.85938 1.44561 4.01592 0.289062 5.4375 0.289062H13.8281V5.67969ZM6 14.4319C5.52661 14.4319 5.14286 14.8157 5.14286 15.2891C5.14286 15.7624 5.52661 16.1462 6 16.1462H13.2857C13.7591 16.1462 14.1429 15.7624 14.1429 15.2891C14.1429 14.8157 13.7591 14.4319 13.2857 14.4319H6ZM6 18.7176C5.52661 18.7176 5.14286 19.1014 5.14286 19.5748C5.14286 20.0482 5.52661 20.4319 6 20.4319H13.2857C13.7591 20.4319 14.1429 20.0482 14.1429 19.5748C14.1429 19.1014 13.7591 18.7176 13.2857 18.7176H6Z"
+                          fill="#87C0FF"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3659_9938">
+                          <rect
+                            width="24"
+                            height="24"
+                            fill="white"
+                            transform="translate(0 0.289062)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <div class="document__meo">
+                      <div class="document__meo-one">FPT Brand Guidelines</div>
+                      <div class="document__min">
+                        <div class="document__meo-two">50MB</div>
+                        <svg
+                          width="4"
+                          height="5"
+                          viewBox="0 0 4 5"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="2"
+                            cy="2.28906"
+                            r="2"
+                            fill="#CCCCCC"
+                          ></circle>
+                        </svg>
+
+                        <div class="document__meo-two">DOC</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__con">
+                  <img class="document__img" src="./img/cart2.png" alt="" />
+                  <div class="document__end-on">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3659_9938)">
+                        <path
+                          d="M15.2344 5.67909C15.2344 5.80833 15.3395 5.91347 15.4688 5.91347H20.8272C20.6986 5.676 20.5331 5.45789 20.3343 5.26978L15.8145 0.99375C15.6391 0.827812 15.4437 0.689391 15.2344 0.580078V5.67909H15.2344Z"
+                          fill="#87C0FF"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.8281 5.67969C13.8281 6.58433 14.5641 7.32031 15.4688 7.32031H21.1406V21.7109C21.1406 23.1325 19.9841 24.2891 18.5625 24.2891H5.4375C4.01592 24.2891 2.85938 23.1325 2.85938 21.7109V2.86719C2.85938 1.44561 4.01592 0.289062 5.4375 0.289062H13.8281V5.67969ZM6 14.4319C5.52661 14.4319 5.14286 14.8157 5.14286 15.2891C5.14286 15.7624 5.52661 16.1462 6 16.1462H13.2857C13.7591 16.1462 14.1429 15.7624 14.1429 15.2891C14.1429 14.8157 13.7591 14.4319 13.2857 14.4319H6ZM6 18.7176C5.52661 18.7176 5.14286 19.1014 5.14286 19.5748C5.14286 20.0482 5.52661 20.4319 6 20.4319H13.2857C13.7591 20.4319 14.1429 20.0482 14.1429 19.5748C14.1429 19.1014 13.7591 18.7176 13.2857 18.7176H6Z"
+                          fill="#87C0FF"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3659_9938">
+                          <rect
+                            width="24"
+                            height="24"
+                            fill="white"
+                            transform="translate(0 0.289062)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <div class="document__meo">
+                      <div class="document__meo-one">FPT Brand Guidelines</div>
+                      <div class="document__min">
+                        <div class="document__meo-two">50MB</div>
+                        <svg
+                          width="4"
+                          height="5"
+                          viewBox="0 0 4 5"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="2"
+                            cy="2.28906"
+                            r="2"
+                            fill="#CCCCCC"
+                          ></circle>
+                        </svg>
+
+                        <div class="document__meo-two">DOC</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__con">
+                  <img class="document__img" src="./img/cart2.png" alt="" />
+                  <div class="document__end-on">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3659_9938)">
+                        <path
+                          d="M15.2344 5.67909C15.2344 5.80833 15.3395 5.91347 15.4688 5.91347H20.8272C20.6986 5.676 20.5331 5.45789 20.3343 5.26978L15.8145 0.99375C15.6391 0.827812 15.4437 0.689391 15.2344 0.580078V5.67909H15.2344Z"
+                          fill="#87C0FF"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.8281 5.67969C13.8281 6.58433 14.5641 7.32031 15.4688 7.32031H21.1406V21.7109C21.1406 23.1325 19.9841 24.2891 18.5625 24.2891H5.4375C4.01592 24.2891 2.85938 23.1325 2.85938 21.7109V2.86719C2.85938 1.44561 4.01592 0.289062 5.4375 0.289062H13.8281V5.67969ZM6 14.4319C5.52661 14.4319 5.14286 14.8157 5.14286 15.2891C5.14286 15.7624 5.52661 16.1462 6 16.1462H13.2857C13.7591 16.1462 14.1429 15.7624 14.1429 15.2891C14.1429 14.8157 13.7591 14.4319 13.2857 14.4319H6ZM6 18.7176C5.52661 18.7176 5.14286 19.1014 5.14286 19.5748C5.14286 20.0482 5.52661 20.4319 6 20.4319H13.2857C13.7591 20.4319 14.1429 20.0482 14.1429 19.5748C14.1429 19.1014 13.7591 18.7176 13.2857 18.7176H6Z"
+                          fill="#87C0FF"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3659_9938">
+                          <rect
+                            width="24"
+                            height="24"
+                            fill="white"
+                            transform="translate(0 0.289062)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <div class="document__meo">
+                      <div class="document__meo-one">FPT Brand Guidelines</div>
+                      <div class="document__min">
+                        <div class="document__meo-two">50MB</div>
+                        <svg
+                          width="4"
+                          height="5"
+                          viewBox="0 0 4 5"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="2"
+                            cy="2.28906"
+                            r="2"
+                            fill="#CCCCCC"
+                          ></circle>
+                        </svg>
+
+                        <div class="document__meo-two">DOC</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="document__bold">
+                <div class="document__con">
+                  <img class="document__img" src="./img/cart2.png" alt="" />
+                  <div class="document__end-on">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3659_9938)">
+                        <path
+                          d="M15.2344 5.67909C15.2344 5.80833 15.3395 5.91347 15.4688 5.91347H20.8272C20.6986 5.676 20.5331 5.45789 20.3343 5.26978L15.8145 0.99375C15.6391 0.827812 15.4437 0.689391 15.2344 0.580078V5.67909H15.2344Z"
+                          fill="#87C0FF"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.8281 5.67969C13.8281 6.58433 14.5641 7.32031 15.4688 7.32031H21.1406V21.7109C21.1406 23.1325 19.9841 24.2891 18.5625 24.2891H5.4375C4.01592 24.2891 2.85938 23.1325 2.85938 21.7109V2.86719C2.85938 1.44561 4.01592 0.289062 5.4375 0.289062H13.8281V5.67969ZM6 14.4319C5.52661 14.4319 5.14286 14.8157 5.14286 15.2891C5.14286 15.7624 5.52661 16.1462 6 16.1462H13.2857C13.7591 16.1462 14.1429 15.7624 14.1429 15.2891C14.1429 14.8157 13.7591 14.4319 13.2857 14.4319H6ZM6 18.7176C5.52661 18.7176 5.14286 19.1014 5.14286 19.5748C5.14286 20.0482 5.52661 20.4319 6 20.4319H13.2857C13.7591 20.4319 14.1429 20.0482 14.1429 19.5748C14.1429 19.1014 13.7591 18.7176 13.2857 18.7176H6Z"
+                          fill="#87C0FF"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3659_9938">
+                          <rect
+                            width="24"
+                            height="24"
+                            fill="white"
+                            transform="translate(0 0.289062)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <div class="document__meo">
+                      <div class="document__meo-one">FPT Brand Guidelines</div>
+                      <div class="document__min">
+                        <div class="document__meo-two">50MB</div>
+                        <svg
+                          width="4"
+                          height="5"
+                          viewBox="0 0 4 5"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="2"
+                            cy="2.28906"
+                            r="2"
+                            fill="#CCCCCC"
+                          ></circle>
+                        </svg>
+
+                        <div class="document__meo-two">DOC</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__con">
+                  <img class="document__img" src="./img/cart2.png" alt="" />
+                  <div class="document__end-on">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3659_9938)">
+                        <path
+                          d="M15.2344 5.67909C15.2344 5.80833 15.3395 5.91347 15.4688 5.91347H20.8272C20.6986 5.676 20.5331 5.45789 20.3343 5.26978L15.8145 0.99375C15.6391 0.827812 15.4437 0.689391 15.2344 0.580078V5.67909H15.2344Z"
+                          fill="#87C0FF"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.8281 5.67969C13.8281 6.58433 14.5641 7.32031 15.4688 7.32031H21.1406V21.7109C21.1406 23.1325 19.9841 24.2891 18.5625 24.2891H5.4375C4.01592 24.2891 2.85938 23.1325 2.85938 21.7109V2.86719C2.85938 1.44561 4.01592 0.289062 5.4375 0.289062H13.8281V5.67969ZM6 14.4319C5.52661 14.4319 5.14286 14.8157 5.14286 15.2891C5.14286 15.7624 5.52661 16.1462 6 16.1462H13.2857C13.7591 16.1462 14.1429 15.7624 14.1429 15.2891C14.1429 14.8157 13.7591 14.4319 13.2857 14.4319H6ZM6 18.7176C5.52661 18.7176 5.14286 19.1014 5.14286 19.5748C5.14286 20.0482 5.52661 20.4319 6 20.4319H13.2857C13.7591 20.4319 14.1429 20.0482 14.1429 19.5748C14.1429 19.1014 13.7591 18.7176 13.2857 18.7176H6Z"
+                          fill="#87C0FF"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3659_9938">
+                          <rect
+                            width="24"
+                            height="24"
+                            fill="white"
+                            transform="translate(0 0.289062)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <div class="document__meo">
+                      <div class="document__meo-one">FPT Brand Guidelines</div>
+                      <div class="document__min">
+                        <div class="document__meo-two">50MB</div>
+                        <svg
+                          width="4"
+                          height="5"
+                          viewBox="0 0 4 5"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="2"
+                            cy="2.28906"
+                            r="2"
+                            fill="#CCCCCC"
+                          ></circle>
+                        </svg>
+
+                        <div class="document__meo-two">DOC</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__con">
+                  <img class="document__img" src="./img/cart2.png" alt="" />
+                  <div class="document__end-on">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3659_9938)">
+                        <path
+                          d="M15.2344 5.67909C15.2344 5.80833 15.3395 5.91347 15.4688 5.91347H20.8272C20.6986 5.676 20.5331 5.45789 20.3343 5.26978L15.8145 0.99375C15.6391 0.827812 15.4437 0.689391 15.2344 0.580078V5.67909H15.2344Z"
+                          fill="#87C0FF"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.8281 5.67969C13.8281 6.58433 14.5641 7.32031 15.4688 7.32031H21.1406V21.7109C21.1406 23.1325 19.9841 24.2891 18.5625 24.2891H5.4375C4.01592 24.2891 2.85938 23.1325 2.85938 21.7109V2.86719C2.85938 1.44561 4.01592 0.289062 5.4375 0.289062H13.8281V5.67969ZM6 14.4319C5.52661 14.4319 5.14286 14.8157 5.14286 15.2891C5.14286 15.7624 5.52661 16.1462 6 16.1462H13.2857C13.7591 16.1462 14.1429 15.7624 14.1429 15.2891C14.1429 14.8157 13.7591 14.4319 13.2857 14.4319H6ZM6 18.7176C5.52661 18.7176 5.14286 19.1014 5.14286 19.5748C5.14286 20.0482 5.52661 20.4319 6 20.4319H13.2857C13.7591 20.4319 14.1429 20.0482 14.1429 19.5748C14.1429 19.1014 13.7591 18.7176 13.2857 18.7176H6Z"
+                          fill="#87C0FF"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3659_9938">
+                          <rect
+                            width="24"
+                            height="24"
+                            fill="white"
+                            transform="translate(0 0.289062)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <div class="document__meo">
+                      <div class="document__meo-one">FPT Brand Guidelines</div>
+                      <div class="document__min">
+                        <div class="document__meo-two">50MB</div>
+                        <svg
+                          width="4"
+                          height="5"
+                          viewBox="0 0 4 5"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="2"
+                            cy="2.28906"
+                            r="2"
+                            fill="#CCCCCC"
+                          ></circle>
+                        </svg>
+
+                        <div class="document__meo-two">DOC</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__con">
+                  <img class="document__img" src="./img/cart2.png" alt="" />
+                  <div class="document__end-on">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3659_9938)">
+                        <path
+                          d="M15.2344 5.67909C15.2344 5.80833 15.3395 5.91347 15.4688 5.91347H20.8272C20.6986 5.676 20.5331 5.45789 20.3343 5.26978L15.8145 0.99375C15.6391 0.827812 15.4437 0.689391 15.2344 0.580078V5.67909H15.2344Z"
+                          fill="#87C0FF"
+                        ></path>
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M13.8281 5.67969C13.8281 6.58433 14.5641 7.32031 15.4688 7.32031H21.1406V21.7109C21.1406 23.1325 19.9841 24.2891 18.5625 24.2891H5.4375C4.01592 24.2891 2.85938 23.1325 2.85938 21.7109V2.86719C2.85938 1.44561 4.01592 0.289062 5.4375 0.289062H13.8281V5.67969ZM6 14.4319C5.52661 14.4319 5.14286 14.8157 5.14286 15.2891C5.14286 15.7624 5.52661 16.1462 6 16.1462H13.2857C13.7591 16.1462 14.1429 15.7624 14.1429 15.2891C14.1429 14.8157 13.7591 14.4319 13.2857 14.4319H6ZM6 18.7176C5.52661 18.7176 5.14286 19.1014 5.14286 19.5748C5.14286 20.0482 5.52661 20.4319 6 20.4319H13.2857C13.7591 20.4319 14.1429 20.0482 14.1429 19.5748C14.1429 19.1014 13.7591 18.7176 13.2857 18.7176H6Z"
+                          fill="#87C0FF"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3659_9938">
+                          <rect
+                            width="24"
+                            height="24"
+                            fill="white"
+                            transform="translate(0 0.289062)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    <div class="document__meo">
+                      <div class="document__meo-one">FPT Brand Guidelines</div>
+                      <div class="document__min">
+                        <div class="document__meo-two">50MB</div>
+                        <svg
+                          width="4"
+                          height="5"
+                          viewBox="0 0 4 5"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="2"
+                            cy="2.28906"
+                            r="2"
+                            fill="#CCCCCC"
+                          ></circle>
+                        </svg>
+
+                        <div class="document__meo-two">DOC</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="document__bold">
+                <div class="document__con">
+                  <img class="document__img" src="./img/cart1.png" alt="" />
+                  <div class="document__end-on">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3659_10018)">
+                        <path
+                          d="M15.0901 7.85212C14.2842 7.85212 13.6286 7.19499 13.6286 6.38728V1.57422H6.15385C4.88745 1.57422 3.85715 2.60685 3.85715 3.87612V20.7009C3.85715 21.9702 4.88745 23.0028 6.15385 23.0028H17.8462C19.1126 23.0028 20.1429 21.9702 20.1429 20.7009V7.85212H15.0901ZM7.28132 16.6412H10.318C10.6639 16.6412 10.9444 16.9223 10.9444 17.269C10.9444 17.6157 10.6639 17.8968 10.318 17.8968H7.28132C6.9354 17.8968 6.65495 17.6157 6.65495 17.269C6.65495 16.9223 6.9354 16.6412 7.28132 16.6412ZM6.65495 13.9208C6.65495 13.5741 6.9354 13.293 7.28132 13.293H16.4681C16.8141 13.293 17.0945 13.5741 17.0945 13.9208C17.0945 14.2675 16.8141 14.5485 16.4681 14.5485H7.28132C6.9354 14.5485 6.65495 14.2675 6.65495 13.9208ZM16.4681 9.94475C16.8141 9.94475 17.0945 10.2258 17.0945 10.5725C17.0945 10.9193 16.8141 11.2003 16.4681 11.2003H7.28132C6.9354 11.2003 6.65495 10.9193 6.65495 10.5725C6.65495 10.2258 6.9354 9.94475 7.28132 9.94475H16.4681Z"
+                          fill="#F37021"
+                        ></path>
+                        <path
+                          d="M15.2344 5.67909C15.2344 5.80833 15.3395 5.91347 15.4688 5.91347H20.8272C20.6986 5.676 20.5331 5.45789 20.3343 5.26978L15.8145 0.99375C15.6391 0.827812 15.4437 0.689391 15.2344 0.580078V5.67909H15.2344Z"
+                          fill="#F37021"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3659_10018">
+                          <rect
+                            width="24"
+                            height="24"
+                            fill="white"
+                            transform="translate(0 0.289062)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <div class="document__meo">
+                      <div class="document__meo-one">FPT Brand Guidelines</div>
+                      <div class="document__min">
+                        <div class="document__meo-two">24MB</div>
+                        <svg
+                          width="4"
+                          height="5"
+                          viewBox="0 0 4 5"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="2"
+                            cy="2.28906"
+                            r="2"
+                            fill="#CCCCCC"
+                          ></circle>
+                        </svg>
+
+                        <div class="document__meo-two">PDF</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="document__con">
+                  <img class="document__img" src="./img/cart1.png" alt="" />
+                  <div class="document__end-on">
+                    <svg
+                      width="24"
+                      height="25"
+                      viewBox="0 0 24 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_3659_10018)">
+                        <path
+                          d="M15.0901 7.85212C14.2842 7.85212 13.6286 7.19499 13.6286 6.38728V1.57422H6.15385C4.88745 1.57422 3.85715 2.60685 3.85715 3.87612V20.7009C3.85715 21.9702 4.88745 23.0028 6.15385 23.0028H17.8462C19.1126 23.0028 20.1429 21.9702 20.1429 20.7009V7.85212H15.0901ZM7.28132 16.6412H10.318C10.6639 16.6412 10.9444 16.9223 10.9444 17.269C10.9444 17.6157 10.6639 17.8968 10.318 17.8968H7.28132C6.9354 17.8968 6.65495 17.6157 6.65495 17.269C6.65495 16.9223 6.9354 16.6412 7.28132 16.6412ZM6.65495 13.9208C6.65495 13.5741 6.9354 13.293 7.28132 13.293H16.4681C16.8141 13.293 17.0945 13.5741 17.0945 13.9208C17.0945 14.2675 16.8141 14.5485 16.4681 14.5485H7.28132C6.9354 14.5485 6.65495 14.2675 6.65495 13.9208ZM16.4681 9.94475C16.8141 9.94475 17.0945 10.2258 17.0945 10.5725C17.0945 10.9193 16.8141 11.2003 16.4681 11.2003H7.28132C6.9354 11.2003 6.65495 10.9193 6.65495 10.5725C6.65495 10.2258 6.9354 9.94475 7.28132 9.94475H16.4681Z"
+                          fill="#F37021"
+                        ></path>
+                        <path
+                          d="M15.2344 5.67909C15.2344 5.80833 15.3395 5.91347 15.4688 5.91347H20.8272C20.6986 5.676 20.5331 5.45789 20.3343 5.26978L15.8145 0.99375C15.6391 0.827812 15.4437 0.689391 15.2344 0.580078V5.67909H15.2344Z"
+                          fill="#F37021"
+                        ></path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_3659_10018">
+                          <rect
+                            width="24"
+                            height="24"
+                            fill="white"
+                            transform="translate(0 0.289062)"
+                          ></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+
+                    <div class="document__meo">
+                      <div class="document__meo-one">FPT Brand Guidelines</div>
+                      <div class="document__min">
+                        <div class="document__meo-two">24MB</div>
+                        <svg
+                          width="4"
+                          height="5"
+                          viewBox="0 0 4 5"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle
+                            cx="2"
+                            cy="2.28906"
+                            r="2"
+                            fill="#CCCCCC"
+                          ></circle>
+                        </svg>
+
+                        <div class="document__meo-two">PDF</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-center">
+                <div class="document__loadmore">
+                  <div class="document__loadmore-text">Load more</div>
+                  <img src="./img/xuong.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <div class="footer_box">
+          <div class="footer__top">
+            <img src="./img/FPT Software H@2x 1.svg" alt="" />
+          </div>
+          <div class="footer__max">
+            <div class="footer__popular">
+              <div class="footer__popular-text">Popular</div>
+              <ul>
+                <li class="footer__popular-one">FSfoft Overview</li>
+                <li class="footer__popular-one">Service offering</li>
+                <li class="footer__popular-one">Case Studies</li>
+                <li class="footer__popular-one">Akasuite</li>
+                <li class="footer__popular-one">Finnance Report</li>
+              </ul>
+            </div>
+            <div class="footer__popular">
+              <div class="footer__popular-text">About Fsoft</div>
+              <ul>
+                <li class="footer__popular-one">FSfoft Overview</li>
+                <li class="footer__popular-one">Service offering</li>
+                <li class="footer__popular-one">Case Studies</li>
+                <li class="footer__popular-one">Akasuite</li>
+                <li class="footer__popular-one">Finnance Report</li>
+              </ul>
+            </div>
+            <div class="footer__popular">
+              <div class="footer__popular-text">Services</div>
+              <ul>
+                <li class="footer__popular-one">Digital Consulting</li>
+                <li class="footer__popular-one">Digital Technology</li>
+                <li class="footer__popular-one">Outsourcing</li>
+              </ul>
+            </div>
+            <div class="footer__popular">
+              <div class="footer__popular-text">Product</div>
+              <ul>
+                <li class="footer__popular-one">akaSuite</li>
+                <li class="footer__popular-one">Leaflet/Brochure</li>
+                <li class="footer__popular-one">Video</li>
+              </ul>
+            </div>
+            <div class="footer__popular">
+              <div class="footer__popular-text">Publications</div>
+              <ul>
+                <li class="footer__popular-one">Case Studies</li>
+                <li class="footer__popular-one">Whitepapers</li>
+                <li class="footer__popular-one">Inforgraphics</li>
+              </ul>
+            </div>
+            <div class="footer__popular">
+              <div class="footer__popular-text">Resources</div>
+              <ul>
+                <li class="footer__popular-one">Vertical Industries</li>
+                <li class="footer__popular-one">Sales Materials</li>
+                <li class="footer__popular-one">Technology</li>
+                <li class="footer__popular-one">Events/ Conferences</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border">
+      <div class="border__max">
+        <div class="border__orange"></div>
+        <div class="border__blue"></div>
+        <div class="border__green"></div>
+      </div>
+    </div>
+    <div class="popup__image">
+      <div class="container">
+        <div class="popup__col">
+          <div class="popup__max">
+            <div class="popup__top">
+              <div class="popup__branding">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12.233 4.4545C12.6723 4.89384 12.6723 5.60616 12.233 6.0455L6.27849 12L12.233 17.9545C12.6723 18.3938 12.6723 19.1062 12.233 19.5455C11.7937 19.9848 11.0813 19.9848 10.642 19.5455L3.892 12.7955C3.45267 12.3562 3.45267 11.6438 3.892 11.2045L10.642 4.4545C11.0813 4.01517 11.7937 4.01517 12.233 4.4545Z"
+                    fill="#1A1A1A"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.5 12C4.5 11.3787 5.00368 10.875 5.625 10.875H19.3125C19.9338 10.875 20.4375 11.3787 20.4375 12C20.4375 12.6213 19.9338 13.125 19.3125 13.125H5.625C5.00368 13.125 4.5 12.6213 4.5 12Z"
+                    fill="#1A1A1A"
+                  />
+                </svg>
+                <div class="popup__branding-flex">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M15.0904 7.56306C14.2845 7.56306 13.6288 6.90593 13.6288 6.09821V1.28516H6.15413C4.88772 1.28516 3.85742 2.31779 3.85742 3.58705V20.4118C3.85742 21.6811 4.88772 22.7137 6.15413 22.7137H17.8464C19.1128 22.7137 20.1431 21.6811 20.1431 20.4118V7.56306H15.0904ZM7.2816 16.3521H10.3183C10.6642 16.3521 10.9446 16.6332 10.9446 16.9799C10.9446 17.3266 10.6642 17.6077 10.3183 17.6077H7.2816C6.93567 17.6077 6.65522 17.3266 6.65522 16.9799C6.65522 16.6332 6.93567 16.3521 7.2816 16.3521ZM6.65522 13.6317C6.65522 13.285 6.93567 13.0039 7.2816 13.0039H16.4684C16.8143 13.0039 17.0948 13.285 17.0948 13.6317C17.0948 13.9784 16.8143 14.2595 16.4684 14.2595H7.2816C6.93567 14.2595 6.65522 13.9784 6.65522 13.6317ZM16.4684 9.65569C16.8143 9.65569 17.0948 9.93677 17.0948 10.2835C17.0948 10.6302 16.8143 10.9113 16.4684 10.9113H7.2816C6.93567 10.9113 6.65522 10.6302 6.65522 10.2835C6.65522 9.93677 6.93567 9.65569 7.2816 9.65569H16.4684Z"
+                      fill="#87C0FF"
+                    />
+                    <path
+                      d="M15.2344 5.39003C15.2344 5.51927 15.3395 5.62441 15.4688 5.62441H20.8272C20.6986 5.38694 20.5331 5.16883 20.3343 4.98072L15.8145 0.704687C15.6391 0.53875 15.4437 0.400328 15.2344 0.291016V5.39003H15.2344Z"
+                      fill="#87C0FF"
+                    />
+                  </svg>
+                  <div class="popup__branding-text">FPT Branding 2022.doc</div>
+                </div>
+              </div>
+              <div class="popup__share">
+                <div class="popup__save">
+                  <div class="popup__chill">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4 7C3.44772 7 3 7.44772 3 8C3 8.55228 3.44772 9 4 9C4.55228 9 5 8.55228 5 8C5 7.44772 4.55228 7 4 7ZM2 8C2 6.89543 2.89543 6 4 6C5.10457 6 6 6.89543 6 8C6 9.10457 5.10457 10 4 10C2.89543 10 2 9.10457 2 8Z"
+                        fill="#333333"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 2.5C11.4477 2.5 11 2.94772 11 3.5C11 4.05228 11.4477 4.5 12 4.5C12.5523 4.5 13 4.05228 13 3.5C13 2.94772 12.5523 2.5 12 2.5ZM10 3.5C10 2.39543 10.8954 1.5 12 1.5C13.1046 1.5 14 2.39543 14 3.5C14 4.60457 13.1046 5.5 12 5.5C10.8954 5.5 10 4.60457 10 3.5Z"
+                        fill="#333333"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M12 11.5C11.4477 11.5 11 11.9477 11 12.5C11 13.0523 11.4477 13.5 12 13.5C12.5523 13.5 13 13.0523 13 12.5C13 11.9477 12.5523 11.5 12 11.5ZM10 12.5C10 11.3954 10.8954 10.5 12 10.5C13.1046 10.5 14 11.3954 14 12.5C14 13.6046 13.1046 14.5 12 14.5C10.8954 14.5 10 13.6046 10 12.5Z"
+                        fill="#333333"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M4.87143 8.48934C5.00681 8.24866 5.31167 8.16329 5.55234 8.29867L10.938 11.328C11.1786 11.4634 11.264 11.7683 11.1286 12.009C10.9932 12.2496 10.6884 12.335 10.4477 12.1996L5.06209 9.17025C4.82141 9.03487 4.73605 8.73002 4.87143 8.48934Z"
+                        fill="#333333"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M11.1286 3.98934C11.264 4.23002 11.1786 4.53487 10.938 4.67025L5.55234 7.69963C5.31167 7.83501 5.00681 7.74965 4.87143 7.50897C4.73605 7.26829 4.82141 6.96343 5.06209 6.82805L10.4477 3.79867C10.6884 3.66329 10.9932 3.74866 11.1286 3.98934Z"
+                        fill="#333333"
+                      />
+                    </svg>
+                    <div class="popup__chill-text">Share</div>
+                  </div>
+                </div>
+                <div class="popup__close">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="24" height="24" rx="12" fill="#E6E6E6" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8.23431 8.23431C8.54673 7.9219 9.05327 7.9219 9.36569 8.23431L15.7657 14.6343C16.0781 14.9467 16.0781 15.4533 15.7657 15.7657C15.4533 16.0781 14.9467 16.0781 14.6343 15.7657L8.23431 9.36569C7.9219 9.05327 7.9219 8.54673 8.23431 8.23431Z"
+                      fill="#1A1A1A"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M15.7657 8.23431C16.0781 8.54673 16.0781 9.05327 15.7657 9.36569L9.36569 15.7657C9.05327 16.0781 8.54673 16.0781 8.23431 15.7657C7.9219 15.4533 7.9219 14.9467 8.23431 14.6343L14.6343 8.23431C14.9467 7.9219 15.4533 7.9219 15.7657 8.23431Z"
+                      fill="#1A1A1A"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="popup__details">
+              <div class="popup__details-text">
+                <p>
+                  Các nhà cung cấp hàng đầu hướng tới thị trường bán lẻ điện,
+                  tiếp tục đầu tư vào dịch vụ hướng tới các doanh nghiệp mới
+                  tham gia
+                </p>
+                <p>
+                  Hướng tới tự do hóa bán lẻ điện dự ki ế n vào năm 2016, các
+                  nhà cung cấp IT hàng đầu như Hitachi, IBM Nhật Bản, TIS…etc đã
+                  bắt đầu cung cấp dịch vụ cho lĩnh vực điện. Mục tiêu hướng tới
+                  là trên 500 doanh nghiệp mới sẽ tham gia vào lĩnh vực này. Các
+                  nhà cung cấp này chuẩn bị dịch vụ cloud để quản lý thông tin
+                  khách hàng và cung và cầu về điện.
+                </p>
+                <p>
+                  Sự tham gia của trên 500 doanh nghiệp từ các lĩnh vực khác
+                  nhau <br />
+                  Thông qua việc tự do hóa toàn diện bán lẻ điện, các do anh
+                  nghiệp, ngoài 10 doanh nghiệp điện lực như TEPCO và KEPCO , sẽ
+                  có thể cung cấp năng lượng, cho các hộ gia đình thông
+                  thường…ect. Các doanh nghiệp mới tham gia này được gọi là các
+                  doanh nghiệp điện quy mô đặc định (viết tắt là PPS ： Power
+                  Producer and Supplier).
+                </p>
+                <p>
+                  Hơn 500 doanh nghiệp PPS này đã thông báo gia nhập vào tháng 3
+                  năm 2015. Các doanh nghiệp từ các lĩnh vực kinh doanh khác như
+                  Hitachi Zosen và Mitsui , Honda cũng dự kiến tham gia lĩnh vực
+                  này.
+                </p>
+                <p>
+                  Dự kiến các doanh nghiệp PPS sẽ xây dựng mới hệ thống cần
+                  thiết cho lĩnh vực điện. Theo đó, các nhà cung cấp IT đã bắt
+                  đầu cung cấp dịch vụ cần thiết cho doanh nghiệp điện.
+                </p>
+                <div class="popup__svg">
+                  <svg width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_415_38022)">
+                    <rect x="6" y="7" width="24" height="24" rx="12" fill="#E6E6E6" shape-rendering="crispEdges"/>
+                    <g clip-path="url(#clip0_415_38022)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.1165 15.2273C18.3362 15.4469 18.3362 15.8031 18.1165 16.0227L15.1392 19L18.1165 21.9773C18.3362 22.1969 18.3362 22.5531 18.1165 22.7727C17.8968 22.9924 17.5407 22.9924 17.321 22.7727L13.946 19.3977C13.7263 19.1781 13.7263 18.8219 13.946 18.6023L17.321 15.2273C17.5407 15.0076 17.8968 15.0076 18.1165 15.2273Z" fill="#808080"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.25 19C14.25 18.6893 14.5018 18.4375 14.8125 18.4375H21.6563C21.9669 18.4375 22.2188 18.6893 22.2188 19C22.2188 19.3107 21.9669 19.5625 21.6563 19.5625H14.8125C14.5018 19.5625 14.25 19.3107 14.25 19Z" fill="#808080"/>
+                    </g>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_415_38022" x="-2.38419e-07" y="0.4" width="38.4" height="38.4" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dx="1.2" dy="0.6"/>
+                    <feGaussianBlur stdDeviation="3.6"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_415_38022"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_415_38022" result="shape"/>
+                    </filter>
+                    <clipPath id="clip0_415_38022">
+                    <rect width="21.6" height="14.4" fill="white" transform="translate(7.2002 11.8008)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>                   
+                  <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <g filter="url(#filter0_d_415_38023)">
+                      <rect x="10" y="11" width="24" height="24" rx="12" fill="white" shape-rendering="crispEdges"/>
+                      <g clip-path="url(#clip0_415_38023)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M21.8835 19.2273C22.1032 19.0076 22.4593 19.0076 22.679 19.2273L26.054 22.6023C26.2737 22.8219 26.2737 23.1781 26.054 23.3977L22.679 26.7727C22.4593 26.9924 22.1032 26.9924 21.8835 26.7727C21.6638 26.5531 21.6638 26.1969 21.8835 25.9773L24.8608 23L21.8835 20.0227C21.6638 19.8031 21.6638 19.4469 21.8835 19.2273Z" fill="#1A1A1A"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M17.7812 23C17.7812 22.6893 18.0331 22.4375 18.3438 22.4375H25.1875C25.4982 22.4375 25.75 22.6893 25.75 23C25.75 23.3107 25.4982 23.5625 25.1875 23.5625H18.3438C18.0331 23.5625 17.7812 23.3107 17.7812 23Z" fill="#1A1A1A"/>
+                      </g>
+                      </g>
+                      <defs>
+                      <filter id="filter0_d_415_38023" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                      <feOffset dx="2" dy="1"/>
+                      <feGaussianBlur stdDeviation="6"/>
+                      <feComposite in2="hardAlpha" operator="out"/>
+                      <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+                      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_415_38023"/>
+                      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_415_38023" result="shape"/>
+                      </filter>
+                      <clipPath id="clip0_415_38023">
+                      <rect width="21.6" height="14.4" fill="white" transform="translate(11.2002 15.8008)"/>
+                      </clipPath>
+                      </defs>
+                  </svg>                     
+                </div>
+              </div>
+              <div class="popup__name">
+                <div class="popup__type">
+                  <div class="popup__type-text">Details</div>
+                  <div class="popup__type-flex">
+                    <div class="popup__type-one">Name</div>
+                    <div class="popup__type-two">FPT Branding 2022</div>
+                  </div>
+                  <div class="popup__type-flex">
+                    <div class="popup__type-one">Type</div>
+                    <div class="popup__type-two">DOC</div>
+                  </div>
+                  <div class="popup__type-flex">
+                    <div class="popup__type-one">Size</div>
+                    <div class="popup__type-two">
+                      5 trang
+                    </div>
+                  </div>
+                  <div class="popup__type-flexback">
+                    <div class="popup__type-one">Folder</div>
+                    <div class="popup__background">
+                      <svg
+                        width="16"
+                        height="16"
+                        viewBox="0 0 16 16"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M2.6844 2.43572C3.04602 2.1353 3.50271 2 4 2H12C12.4769 2 12.9315 2.12487 13.2974 2.41874C13.6643 2.71334 13.8942 3.13943 13.9905 3.65266L14.9893 8.39699C14.9964 8.43087 15 8.46539 15 8.5V12L15 12.0015C14.9985 12.531 14.7874 13.0385 14.4129 13.4129C14.0385 13.7874 13.531 13.9985 13.0015 14L13 14H3L2.99855 14C2.46897 13.9985 1.96153 13.7874 1.58706 13.4129C1.21259 13.0385 1.00154 12.531 1 12.0015L1 12V8.5C1 8.46539 1.00359 8.43087 1.01073 8.39699L2.00987 3.65107C2.10533 3.15901 2.32417 2.73498 2.6844 2.43572ZM3.32342 3.20491C3.17693 3.32661 3.05226 3.5259 2.991 3.84442C2.99045 3.84729 2.98988 3.85015 2.98927 3.85301L2 8.55206V11.9992C2.00094 12.2643 2.10668 12.5183 2.29417 12.7058C2.48167 12.8933 2.73571 12.9991 3.00086 13H12.9991C13.2643 12.9991 13.5183 12.8933 13.7058 12.7058C13.8933 12.5183 13.9991 12.2643 14 11.9991V8.55206L13.0107 3.85301C13.0099 3.84903 13.0091 3.84504 13.0084 3.84104C12.9477 3.51334 12.8186 3.31671 12.6713 3.19845C12.5216 3.07825 12.3044 3 12 3H4C3.68479 3 3.46961 3.08345 3.32342 3.20491Z"
+                          fill="#2D90FF"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M1 8.5C1 8.22386 1.22386 8 1.5 8H6C6.27614 8 6.5 8.22386 6.5 8.5C6.5 8.77614 6.27614 9 6 9H1.5C1.22386 9 1 8.77614 1 8.5Z"
+                          fill="#2D90FF"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9.5 8.5C9.5 8.22386 9.72386 8 10 8H14.5C14.7761 8 15 8.22386 15 8.5C15 8.77614 14.7761 9 14.5 9H10C9.72386 9 9.5 8.77614 9.5 8.5Z"
+                          fill="#2D90FF"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6 8C6.27614 8 6.5 8.22386 6.5 8.5C6.5 8.89782 6.65804 9.27936 6.93934 9.56066C7.22064 9.84196 7.60218 10 8 10C8.39782 10 8.77936 9.84196 9.06066 9.56066C9.34196 9.27936 9.5 8.89782 9.5 8.5C9.5 8.22386 9.72386 8 10 8C10.2761 8 10.5 8.22386 10.5 8.5C10.5 9.16304 10.2366 9.79893 9.76777 10.2678C9.29893 10.7366 8.66304 11 8 11C7.33696 11 6.70107 10.7366 6.23223 10.2678C5.76339 9.79893 5.5 9.16304 5.5 8.5C5.5 8.22386 5.72386 8 6 8Z"
+                          fill="#2D90FF"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M4 4.5C4 4.22386 4.22386 4 4.5 4H11.5C11.7761 4 12 4.22386 12 4.5C12 4.77614 11.7761 5 11.5 5H4.5C4.22386 5 4 4.77614 4 4.5Z"
+                          fill="#2D90FF"
+                        />
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M3.5 6.5C3.5 6.22386 3.72386 6 4 6H12C12.2761 6 12.5 6.22386 12.5 6.5C12.5 6.77614 12.2761 7 12 7H4C3.72386 7 3.5 6.77614 3.5 6.5Z"
+                          fill="#2D90FF"
+                        />
+                      </svg>
+                      <div class="popup__background-text">Document</div>
+                    </div>
+                  </div>
+                  <div class="popup__type-flex">
+                    <div class="popup__type-one">Last edited</div>
+                    <div class="popup__type-two">18:06 27-08-2021</div>
+                  </div>
+                  <div class="popup__type-flex">
+                    <div class="popup__type-one">Created by</div>
+                    <div class="popup__type-two">HuanHN20</div>
+                  </div>
+                  <div class="popup__type-flex">
+                    <div class="popup__type-one">Description</div>
+                    <div class="popup__type-two">No</div>
+                  </div>
+                </div>
+                <div class="popup__border"></div>
+                <div class="popup__download">
+                  <svg
+                    width="40"
+                    height="40"
+                    viewBox="0 0 40 40"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.5"
+                      y="0.5"
+                      width="39"
+                      height="39"
+                      rx="7.5"
+                      stroke="#4D4D4D"
+                    />
+                    <g clip-path="url(#clip0_415_37696)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M14.4822 11.9822C14.9511 11.5134 15.587 11.25 16.25 11.25H23.75C24.413 11.25 25.0489 11.5134 25.5178 11.9822C25.9866 12.4511 26.25 13.087 26.25 13.75V28.125C26.25 28.3711 26.1056 28.5943 25.881 28.6952C25.6565 28.796 25.3937 28.7556 25.2098 28.5921L20 23.9612L14.7902 28.5921C14.6063 28.7556 14.3435 28.796 14.119 28.6952C13.8944 28.5943 13.75 28.3711 13.75 28.125V13.75C13.75 13.087 14.0134 12.4511 14.4822 11.9822ZM16.25 12.5C15.9185 12.5 15.6005 12.6317 15.3661 12.8661C15.1317 13.1005 15 13.4185 15 13.75V26.7332L19.5848 22.6579C19.8216 22.4474 20.1784 22.4474 20.4152 22.6579L25 26.7332V13.75C25 13.4185 24.8683 13.1005 24.6339 12.8661C24.3995 12.6317 24.0815 12.5 23.75 12.5H16.25Z"
+                        fill="#4D4D4D"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_415_37696">
+                        <rect
+                          width="36"
+                          height="24"
+                          fill="white"
+                          transform="translate(2 8)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div class="popup__load">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M5.3125 7.5C5.06386 7.5 4.8254 7.59877 4.64959 7.77459C4.47377 7.9504 4.375 8.18886 4.375 8.4375V16.5625C4.375 16.8111 4.47377 17.0496 4.64959 17.2254C4.8254 17.4012 5.06386 17.5 5.3125 17.5H14.6875C14.9361 17.5 15.1746 17.4012 15.3504 17.2254C15.5262 17.0496 15.625 16.8111 15.625 16.5625V8.4375C15.625 8.18886 15.5262 7.9504 15.3504 7.77459C15.1746 7.59877 14.9361 7.5 14.6875 7.5H13.125C12.7798 7.5 12.5 7.22018 12.5 6.875C12.5 6.52982 12.7798 6.25 13.125 6.25H14.6875C15.2677 6.25 15.8241 6.48047 16.2343 6.8907C16.6445 7.30094 16.875 7.85734 16.875 8.4375V16.5625C16.875 17.1427 16.6445 17.6991 16.2343 18.1093C15.8241 18.5195 15.2677 18.75 14.6875 18.75H5.3125C4.73234 18.75 4.17594 18.5195 3.7657 18.1093C3.35547 17.6991 3.125 17.1427 3.125 16.5625V8.4375C3.125 7.85734 3.35547 7.30094 3.7657 6.8907C4.17594 6.48047 4.73234 6.25 5.3125 6.25H6.875C7.22018 6.25 7.5 6.52982 7.5 6.875C7.5 7.22018 7.22018 7.5 6.875 7.5H5.3125Z"
+                        fill="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M6.43306 10.1831C6.67714 9.93898 7.07286 9.93898 7.31694 10.1831L10 12.8661L12.6831 10.1831C12.9271 9.93898 13.3229 9.93898 13.5669 10.1831C13.811 10.4271 13.811 10.8229 13.5669 11.0669L10.4419 14.1919C10.1979 14.436 9.80214 14.436 9.55806 14.1919L6.43306 11.0669C6.18898 10.8229 6.18898 10.4271 6.43306 10.1831Z"
+                        fill="white"
+                      />
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10 1.25C10.3452 1.25 10.625 1.52982 10.625 1.875V13.125C10.625 13.4702 10.3452 13.75 10 13.75C9.65482 13.75 9.375 13.4702 9.375 13.125V1.875C9.375 1.52982 9.65482 1.25 10 1.25Z"
+                        fill="white"
+                      />
+                    </svg>
+                    <div class="popup__load-text">Download</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="popup__comment">
+              <div class="popup__views">
+                <div class="popup__previous">
+                  <div class="popup__previous-text">Comment (12)</div>
+                </div>
+                <div class="popup__edwards">
+                  <div class="popup__edwards-text">
+                    View 32 previous comments
+                  </div>
+                  <div class="popup__min">
+                    <div class="popup__lt">
+                      <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_3725_1491)">
+                          <circle cx="20" cy="20" r="20" fill="#4BA0FF" />
+                          <path
+                            d="M16.15 23.068V15.2H14.078V25H20.042V23.068H16.15ZM26.8657 15.2H19.4317V17.132H22.1057V25H24.1777V17.132H26.8657V15.2Z"
+                            fill="white"
+                          />
+                        </g>
+                        <rect
+                          x="0.25"
+                          y="0.25"
+                          width="39.5"
+                          height="39.5"
+                          rx="19.75"
+                          stroke="white"
+                          stroke-width="0.5"
+                        />
+                        <defs>
+                          <clipPath id="clip0_3725_1491">
+                            <rect width="40" height="40" rx="20" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="popup__ralph">
+                      <div class="popup__designer">
+                        <div class="popup__designer-one">Ralph Edwards</div>
+                        <div class="popup__designer-two">
+                          As a designer I am constantly frustrated by the
+                          disappearing of component examples I have been using
+                          in my designs and the lack of working examples of
+                          components. Reading documentation about components
+                          doesn't help me. I need to interact with components
+                          and be able to share them with others to interact
+                          with. The Sketch file of UI components is months out
+                          of date.
+                        </div>
+                        <div class="popup__designer-flex">
+                          <div class="popup__reply">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M6.66667 5.66667V3L2 7.66667L6.66667 12.3333V9.6C10 9.6 12.3333 10.6667 14 13C13.3333 9.66667 11.3333 6.33333 6.66667 5.66667Z"
+                                fill="#4D4D4D"
+                              />
+                            </svg>
+                            <div class="popup__reply-text">Reply</div>
+                          </div>
+                          <div class="popup__time">
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M6.9935 0.333984C3.3135 0.333984 0.333496 3.32065 0.333496 7.00065C0.333496 10.6807 3.3135 13.6673 6.9935 13.6673C10.6802 13.6673 13.6668 10.6807 13.6668 7.00065C13.6668 3.32065 10.6802 0.333984 6.9935 0.333984ZM9.1935 10.1407L6.3335 7.27398V3.66732H7.66683V6.72732L10.1402 9.20065L9.1935 10.1407Z"
+                                fill="#999999"
+                              />
+                            </svg>
+                            <div class="popup__time-text">9/23/16</div>
+                          </div>
+                          <div class="popup__time">
+                            <svg
+                              width="16"
+                              height="14"
+                              viewBox="0 0 16 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M13.9998 5.00065H9.79317L10.4265 1.95398L10.4465 1.74065C10.4465 1.46732 10.3332 1.21398 10.1532 1.03398L9.4465 0.333984L5.05984 4.72732C4.81317 4.96732 4.6665 5.30065 4.6665 5.66732V12.334C4.6665 13.0673 5.2665 13.6673 5.99984 13.6673H11.9998C12.5532 13.6673 13.0265 13.334 13.2265 12.854L15.2398 8.15398C15.2998 8.00065 15.3332 7.84065 15.3332 7.66732V6.33398C15.3332 5.60065 14.7332 5.00065 13.9998 5.00065ZM13.9998 7.66732L11.9998 12.334H5.99984V5.66732L8.89317 2.77398L8.15317 6.33398H13.9998V7.66732ZM0.666504 5.66732H3.33317V13.6673H0.666504V5.66732Z"
+                                fill="#666666"
+                              />
+                            </svg>
+                            <div class="popup__time-text">198</div>
+                          </div>
+                        </div>
+                        <div class="popup__cooper">
+                          <div></div>
+                          <div class="popup__examples">
+                            <div class="popup__examples-svg">
+                              <svg
+                                width="40"
+                                height="40"
+                                viewBox="0 0 40 40"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <g clip-path="url(#clip0_3725_6064)">
+                                  <circle
+                                    cx="20"
+                                    cy="20"
+                                    r="20"
+                                    fill="#4BA0FF"
+                                  />
+                                  <path
+                                    d="M16.15 23.068V15.2H14.078V25H20.042V23.068H16.15ZM26.8657 15.2H19.4317V17.132H22.1057V25H24.1777V17.132H26.8657V15.2Z"
+                                    fill="white"
+                                  />
+                                </g>
+                                <rect
+                                  x="0.25"
+                                  y="0.25"
+                                  width="39.5"
+                                  height="39.5"
+                                  rx="19.75"
+                                  stroke="white"
+                                  stroke-width="0.5"
+                                />
+                                <defs>
+                                  <clipPath id="clip0_3725_6064">
+                                    <rect
+                                      width="40"
+                                      height="40"
+                                      rx="20"
+                                      fill="white"
+                                    />
+                                  </clipPath>
+                                </defs>
+                              </svg>
+                            </div>
+                            <div class="popup__working">
+                              <div class="popup__working-one">Jane Cooper</div>
+                              <div class="popup__working-two">
+                                As a designer I am constantly frustrated by the
+                                disappearing of component examples
+                              </div>
+                              <div class="popup__working-flex">
+                                <div class="popup__reply">
+                                  <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M6.66667 5.66667V3L2 7.66667L6.66667 12.3333V9.6C10 9.6 12.3333 10.6667 14 13C13.3333 9.66667 11.3333 6.33333 6.66667 5.66667Z"
+                                      fill="#999999"
+                                    />
+                                  </svg>
+                                  <div class="popup__reply-text">Reply</div>
+                                </div>
+                                <div class="popup__time">
+                                  <svg
+                                    width="14"
+                                    height="14"
+                                    viewBox="0 0 14 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M6.9935 0.333984C3.3135 0.333984 0.333496 3.32065 0.333496 7.00065C0.333496 10.6807 3.3135 13.6673 6.9935 13.6673C10.6802 13.6673 13.6668 10.6807 13.6668 7.00065C13.6668 3.32065 10.6802 0.333984 6.9935 0.333984ZM9.1935 10.1407L6.3335 7.27398V3.66732H7.66683V6.72732L10.1402 9.20065L9.1935 10.1407Z"
+                                      fill="#999999"
+                                    />
+                                  </svg>
+                                  <div class="popup__time-text">1/15/12</div>
+                                </div>
+                                <div class="popup__time">
+                                  <svg
+                                    width="16"
+                                    height="14"
+                                    viewBox="0 0 16 14"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                  >
+                                    <path
+                                      d="M13.9998 5.00065H9.79317L10.4265 1.95398L10.4465 1.74065C10.4465 1.46732 10.3332 1.21398 10.1532 1.03398L9.4465 0.333984L5.05984 4.72732C4.81317 4.96732 4.6665 5.30065 4.6665 5.66732V12.334C4.6665 13.0673 5.2665 13.6673 5.99984 13.6673H11.9998C12.5532 13.6673 13.0265 13.334 13.2265 12.854L15.2398 8.15398C15.2998 8.00065 15.3332 7.84065 15.3332 7.66732V6.33398C15.3332 5.60065 14.7332 5.00065 13.9998 5.00065ZM13.9998 7.66732L11.9998 12.334H5.99984V5.66732L8.89317 2.77398L8.15317 6.33398H13.9998V7.66732ZM0.666504 5.66732H3.33317V13.6673H0.666504V5.66732Z"
+                                      fill="#666666"
+                                    />
+                                  </svg>
+                                  <div class="popup__time-text">2</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup__min">
+                    <div class="popup__lt">
+                      <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_3725_1491)">
+                          <circle cx="20" cy="20" r="20" fill="#4BA0FF" />
+                          <path
+                            d="M16.15 23.068V15.2H14.078V25H20.042V23.068H16.15ZM26.8657 15.2H19.4317V17.132H22.1057V25H24.1777V17.132H26.8657V15.2Z"
+                            fill="white"
+                          />
+                        </g>
+                        <rect
+                          x="0.25"
+                          y="0.25"
+                          width="39.5"
+                          height="39.5"
+                          rx="19.75"
+                          stroke="white"
+                          stroke-width="0.5"
+                        />
+                        <defs>
+                          <clipPath id="clip0_3725_1491">
+                            <rect width="40" height="40" rx="20" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="popup__ralph">
+                      <div class="popup__designer">
+                        <div class="popup__designer-one">Ralph Edwards</div>
+                        <div class="popup__designer-two">
+                          As a designer I am constantly frustrated by the
+                          disappearing of component examples I have been using
+                          in my designs and the lack of working examples of
+                          components. Reading documentation about components
+                          doesn't help me. I need to interact with components
+                          and be able to share them with others to interact
+                          with. The Sketch file of UI components is months out
+                          of date.
+                        </div>
+                        <div class="popup__designer-flex">
+                          <div class="popup__reply">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M6.66667 5.66667V3L2 7.66667L6.66667 12.3333V9.6C10 9.6 12.3333 10.6667 14 13C13.3333 9.66667 11.3333 6.33333 6.66667 5.66667Z"
+                                fill="#4D4D4D"
+                              />
+                            </svg>
+                            <div class="popup__reply-text">Reply</div>
+                          </div>
+                          <div class="popup__time">
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M6.9935 0.333984C3.3135 0.333984 0.333496 3.32065 0.333496 7.00065C0.333496 10.6807 3.3135 13.6673 6.9935 13.6673C10.6802 13.6673 13.6668 10.6807 13.6668 7.00065C13.6668 3.32065 10.6802 0.333984 6.9935 0.333984ZM9.1935 10.1407L6.3335 7.27398V3.66732H7.66683V6.72732L10.1402 9.20065L9.1935 10.1407Z"
+                                fill="#999999"
+                              />
+                            </svg>
+                            <div class="popup__time-text">9/23/16</div>
+                          </div>
+                          <div class="popup__time">
+                            <svg
+                              width="16"
+                              height="14"
+                              viewBox="0 0 16 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M13.9998 5.00065H9.79317L10.4265 1.95398L10.4465 1.74065C10.4465 1.46732 10.3332 1.21398 10.1532 1.03398L9.4465 0.333984L5.05984 4.72732C4.81317 4.96732 4.6665 5.30065 4.6665 5.66732V12.334C4.6665 13.0673 5.2665 13.6673 5.99984 13.6673H11.9998C12.5532 13.6673 13.0265 13.334 13.2265 12.854L15.2398 8.15398C15.2998 8.00065 15.3332 7.84065 15.3332 7.66732V6.33398C15.3332 5.60065 14.7332 5.00065 13.9998 5.00065ZM13.9998 7.66732L11.9998 12.334H5.99984V5.66732L8.89317 2.77398L8.15317 6.33398H13.9998V7.66732ZM0.666504 5.66732H3.33317V13.6673H0.666504V5.66732Z"
+                                fill="#666666"
+                              />
+                            </svg>
+                            <div class="popup__time-text">3</div>
+                          </div>
+                        </div>
+                        <div class="popup__cooper">
+                          <div></div>
+                          <div class="popup__date">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M13 9.66732L9 13.6673L8.05333 12.7207L10.4467 10.334H3V2.33398H4.33333V9.00065H10.4467L8.05333 6.61398L9 5.66732L13 9.66732Z"
+                                fill="#333333"
+                              />
+                            </svg>
+                            <div class="popup__date-text">5 Reply</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup__min">
+                    <div class="popup__lt">
+                      <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_3725_1491)">
+                          <circle cx="20" cy="20" r="20" fill="#4BA0FF" />
+                          <path
+                            d="M16.15 23.068V15.2H14.078V25H20.042V23.068H16.15ZM26.8657 15.2H19.4317V17.132H22.1057V25H24.1777V17.132H26.8657V15.2Z"
+                            fill="white"
+                          />
+                        </g>
+                        <rect
+                          x="0.25"
+                          y="0.25"
+                          width="39.5"
+                          height="39.5"
+                          rx="19.75"
+                          stroke="white"
+                          stroke-width="0.5"
+                        />
+                        <defs>
+                          <clipPath id="clip0_3725_1491">
+                            <rect width="40" height="40" rx="20" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="popup__ralph">
+                      <div class="popup__designer">
+                        <div class="popup__designer-one">Ralph Edwards</div>
+                        <div class="popup__designer-two">
+                          As a designer I am constantly frustrated by the
+                          disappearing of component examples I have been using
+                          in my designs and the lack of working examples of
+                          components. Reading documentation about components
+                          doesn't help me. I need to interact with components
+                          and be able to share them with others to interact
+                          with. The Sketch file of UI components is months out
+                          of date.
+                        </div>
+                        <div class="popup__designer-flex">
+                          <div class="popup__reply">
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M6.66667 5.66667V3L2 7.66667L6.66667 12.3333V9.6C10 9.6 12.3333 10.6667 14 13C13.3333 9.66667 11.3333 6.33333 6.66667 5.66667Z"
+                                fill="#4D4D4D"
+                              />
+                            </svg>
+                            <div class="popup__reply-text">Reply</div>
+                          </div>
+                          <div class="popup__time">
+                            <svg
+                              width="14"
+                              height="14"
+                              viewBox="0 0 14 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M6.9935 0.333984C3.3135 0.333984 0.333496 3.32065 0.333496 7.00065C0.333496 10.6807 3.3135 13.6673 6.9935 13.6673C10.6802 13.6673 13.6668 10.6807 13.6668 7.00065C13.6668 3.32065 10.6802 0.333984 6.9935 0.333984ZM9.1935 10.1407L6.3335 7.27398V3.66732H7.66683V6.72732L10.1402 9.20065L9.1935 10.1407Z"
+                                fill="#999999"
+                              />
+                            </svg>
+                            <div class="popup__time-text">5 day ago</div>
+                          </div>
+                          <div class="popup__time">
+                            <svg
+                              width="16"
+                              height="14"
+                              viewBox="0 0 16 14"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M13.9998 5.00065H9.79317L10.4265 1.95398L10.4465 1.74065C10.4465 1.46732 10.3332 1.21398 10.1532 1.03398L9.4465 0.333984L5.05984 4.72732C4.81317 4.96732 4.6665 5.30065 4.6665 5.66732V12.334C4.6665 13.0673 5.2665 13.6673 5.99984 13.6673H11.9998C12.5532 13.6673 13.0265 13.334 13.2265 12.854L15.2398 8.15398C15.2998 8.00065 15.3332 7.84065 15.3332 7.66732V6.33398C15.3332 5.60065 14.7332 5.00065 13.9998 5.00065ZM13.9998 7.66732L11.9998 12.334H5.99984V5.66732L8.89317 2.77398L8.15317 6.33398H13.9998V7.66732ZM0.666504 5.66732H3.33317V13.6673H0.666504V5.66732Z"
+                                fill="#666666"
+                              />
+                            </svg>
+                            <div class="popup__time-text">0</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popup__min">
+                    <div class="popup__lt">
+                      <svg
+                        width="40"
+                        height="40"
+                        viewBox="0 0 40 40"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <g clip-path="url(#clip0_3725_1491)">
+                          <circle cx="20" cy="20" r="20" fill="#4BA0FF" />
+                          <path
+                            d="M16.15 23.068V15.2H14.078V25H20.042V23.068H16.15ZM26.8657 15.2H19.4317V17.132H22.1057V25H24.1777V17.132H26.8657V15.2Z"
+                            fill="white"
+                          />
+                        </g>
+                        <rect
+                          x="0.25"
+                          y="0.25"
+                          width="39.5"
+                          height="39.5"
+                          rx="19.75"
+                          stroke="white"
+                          stroke-width="0.5"
+                        />
+                        <defs>
+                          <clipPath id="clip0_3725_1491">
+                            <rect width="40" height="40" rx="20" fill="white" />
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </div>
+                    <div class="popup__shup">
+                      <input type="text" placeholder="Write a comment..." />
+                      <button>Send</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="popup__muiten">
+            <img class="left" src="./img/buttontrai.svg" alt="" />
+            <img class="right" src="./img/buttonphai.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(document).on("click", ".document__con", function () {
+          $(".popup__image").toggleClass("open");
+        });
+        $(document).on("click", ".popup__close", function () {
+          $(".popup__image").removeClass("open");
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="menu-top1">
+      <div class="menu-top2">
+        <div class="">
+          <img class="logounion" src="./img/FPT Software.svg" alt="" />
+        </div>
+        <div class="menu-top3">
+          <img class="menu-svg" src="./img/menu.png" alt="" />
+        </div>
+      </div>
+      <div class="menu-bottom1">
+        <div class="menu-bottom2">
+          <ul class="menu-b">
+            <li><a href="" class="menu-1">Home</a></li>
+            <li><a href="" class="menu-1">Popular</a></li>
+            <li><a href="" class="menu-1">Image</a></li>
+            <li><a href="" class="menu-1">Document</a></li>
+            <li><a href="" class="menu-1">Video</a></li>
+            <li><a href="" class="menu-1">Other</a></li>
+            <li><a href="" class="menu-1">Support</a></li>
+          </ul>
+        </div>
+        <div class="menu-bottom3"></div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function () {
+        $(document).on("click", ".menu-top3", function () {
+          $(".menu-top1").toggleClass("open");
+        });
+        $(document).on("click", ".menu-bottom3", function () {
+          $(".menu-top1").removeClass("open");
+        });
+      });
+    </script>
+    <div class="header">
+      <div class="header__max">
+        <img src="./img/FPT Software.svg" alt="" />
+        <div class="container">
+          <div class="header__menuone">
+            <div class="header__input">
+              <div class="header__input-svg">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.90395 2.41159C4.79347 1.81724 5.83925 1.5 6.90907 1.5V2L6.9091 1.5C8.34363 1.50009 9.71939 2.07 10.7338 3.08437C11.7481 4.09874 12.318 5.47449 12.3181 6.90903V6.90906C12.3181 7.97887 12.0009 9.02466 11.4065 9.91418C10.8122 10.8037 9.9674 11.497 8.97902 11.9064C7.99065 12.3158 6.90307 12.4229 5.85381 12.2142C4.80455 12.0055 3.84075 11.4903 3.08428 10.7338C2.32781 9.97738 1.81265 9.01357 1.60394 7.96432C1.39523 6.91506 1.50234 5.82748 1.91174 4.8391C2.32114 3.85073 3.01444 3.00595 3.90395 2.41159ZM6.90907 2.5C8.0784 2.50008 9.19981 2.96463 10.0267 3.79148C10.8535 4.61832 11.318 5.73973 11.3181 6.90906M6.90903 2.5C6.03701 2.50001 5.18458 2.75859 4.45952 3.24306C3.73445 3.72754 3.16933 4.41614 2.83562 5.22179C2.50191 6.02744 2.4146 6.91395 2.58472 7.76923C2.75485 8.6245 3.17477 9.41012 3.79139 10.0267C4.40801 10.6434 5.19363 11.0633 6.0489 11.2334C6.90417 11.4035 7.79069 11.3162 8.59634 10.9825C9.40199 10.6488 10.0906 10.0837 10.5751 9.35861C11.0595 8.63355 11.3181 7.78111 11.3181 6.90909"
+                    fill="#0071F0"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.2182 10.2187C10.4135 10.0235 10.7301 10.0235 10.9253 10.2187L14.3538 13.6471C14.549 13.8424 14.549 14.159 14.3538 14.3543C14.1585 14.5495 13.8419 14.5495 13.6467 14.3543L10.2182 10.9258C10.023 10.7306 10.023 10.414 10.2182 10.2187Z"
+                    fill="#0071F0"
+                  />
+                </svg>
+                <input type="text" placeholder="Search anything you need" />
+              </div>
+            </div>
+            <ul class="header__top">
+              <li><a class="header__top-one" href="">Home</a></li>
+              <li><a class="header__top-one" href="">Popular</a></li>
+              <li><a class="header__top-one" href="">Image</a></li>
+              <li><a class="header__top-one" href="">Document</a></li>
+              <li><a class="header__top-one" href="">Video</a></li>
+              <li><a class="header__top-one" href="">Other</a></li>
+              <li><a class="header__top-one" href="">Support</a></li>
+              <li><img src="./img/LT.svg" alt="" /></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner__support">
+      <div class="banner-img">
+        <img src="img/suport.png" alt="" />
+      </div>
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div class="banner__max">
+            <div class="banner__top">
+              <div class="banner__top-two">Lorem ipsum</div>
+              <div class="banner__top-one">
+                Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
+                tempor adipiscing Lorem ipsum dolor sit amet, consectetur elit,
+                sed do eiusmod tempor
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner__how">
+        <div class="banner__how-text">
+            How can we help?
+        </div>
+        <div class="banner__how-flex">
+            <div class="banner__technical">Technical</div>
+            <div class="banner__content">Content</div>
+        </div>
+        <input type="text" placeholder="Typing">
+        <div class="d-flex justify-content-end">  
+           <button>Send</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+          <div class="footer_box">
+            <div class="footer__top">
+              <img src="./img/FPT Software H@2x 1.svg" alt="" />
+            </div>
+            <div class="footer__max">
+              <div class="footer__popular">
+                <div class="footer__popular-text">Popular</div>
+                <ul>
+                  <li class="footer__popular-one">FSfoft Overview</li>
+                  <li class="footer__popular-one">Service offering</li>
+                  <li class="footer__popular-one">Case Studies</li>
+                  <li class="footer__popular-one">Akasuite</li>
+                  <li class="footer__popular-one">Finnance Report</li>
+                </ul>
+              </div>
+              <div class="footer__popular">
+                <div class="footer__popular-text">About Fsoft</div>
+                <ul>
+                  <li class="footer__popular-one">FSfoft Overview</li>
+                  <li class="footer__popular-one">Service offering</li>
+                  <li class="footer__popular-one">Case Studies</li>
+                  <li class="footer__popular-one">Akasuite</li>
+                  <li class="footer__popular-one">Finnance Report</li>
+                </ul>
+              </div>
+              <div class="footer__popular">
+                <div class="footer__popular-text">Services</div>
+                <ul>
+                  <li class="footer__popular-one">Digital Consulting</li>
+                  <li class="footer__popular-one">Digital Technology</li>
+                  <li class="footer__popular-one">Outsourcing</li>
+                </ul>
+              </div>
+              <div class="footer__popular">
+                <div class="footer__popular-text">Product</div>
+                <ul>
+                  <li class="footer__popular-one">akaSuite</li>
+                  <li class="footer__popular-one">Leaflet/Brochure</li>
+                  <li class="footer__popular-one">Video</li>
+                </ul>
+              </div>
+              <div class="footer__popular">
+                <div class="footer__popular-text">Publications</div>
+                <ul>
+                  <li class="footer__popular-one">Case Studies</li>
+                  <li class="footer__popular-one">Whitepapers</li>
+                  <li class="footer__popular-one">Inforgraphics</li>
+                </ul>
+              </div>
+              <div class="footer__popular">
+                <div class="footer__popular-text">Resources</div>
+                <ul>
+                  <li class="footer__popular-one">Vertical Industries</li>
+                  <li class="footer__popular-one">Sales Materials</li>
+                  <li class="footer__popular-one">Technology</li>
+                  <li class="footer__popular-one">Events/ Conferences</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="border">
+        <div class="border__max">
+          <div class="border__orange"></div>
+          <div class="border__blue"></div>
+          <div class="border__green"></div>
+        </div>
+    </div>
+  </body>
+</html>

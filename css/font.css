@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'BR Omega';
+    src: url('../fonts/BROmegaVN-LightItalic.eot');
+    src: url('../fonts/BROmegaVN-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BROmegaVN-LightItalic.woff2') format('woff2'),
+        url('../fonts/BROmegaVN-LightItalic.woff') format('woff'),
+        url('../fonts/BROmegaVN-LightItalic.ttf') format('truetype'),
+        url('../fonts/BROmegaVN-LightItalic.svg#BROmegaVN-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('../fonts/BROmegaVN-Bold.eot');
+    src: url('../fonts/BROmegaVN-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BROmegaVN-Bold.woff2') format('woff2'),
+        url('../fonts/BROmegaVN-Bold.woff') format('woff'),
+        url('../fonts/BROmegaVN-Bold.ttf') format('truetype'),
+        url('../fonts/BROmegaVN-Bold.svg#BROmegaVN-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('../fonts/BROmegaVN-BoldItalic.eot');
+    src: url('../fonts/BROmegaVN-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BROmegaVN-BoldItalic.woff2') format('woff2'),
+        url('../fonts/BROmegaVN-BoldItalic.woff') format('woff'),
+        url('../fonts/BROmegaVN-BoldItalic.ttf') format('truetype'),
+        url('../fonts/BROmegaVN-BoldItalic.svg#BROmegaVN-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('../fonts/BROmegaVN-Regular.eot');
+    src: url('../fonts/BROmegaVN-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BROmegaVN-Regular.woff2') format('woff2'),
+        url('../fonts/BROmegaVN-Regular.woff') format('woff'),
+        url('../fonts/BROmegaVN-Regular.ttf') format('truetype'),
+        url('../fonts/BROmegaVN-Regular.svg#BROmegaVN-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('../fonts/BROmegaVN-Light.eot');
+    src: url('../fonts/BROmegaVN-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BROmegaVN-Light.woff2') format('woff2'),
+        url('../fonts/BROmegaVN-Light.woff') format('woff'),
+        url('../fonts/BROmegaVN-Light.ttf') format('truetype'),
+        url('../fonts/BROmegaVN-Light.svg#BROmegaVN-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('../fonts/BROmegaVN-Italic.eot');
+    src: url('../fonts/BROmegaVN-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BROmegaVN-Italic.woff2') format('woff2'),
+        url('../fonts/BROmegaVN-Italic.woff') format('woff'),
+        url('../fonts/BROmegaVN-Italic.ttf') format('truetype'),
+        url('../fonts/BROmegaVN-Italic.svg#BROmegaVN-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('../fonts/BROmegaVN-BlackItalic.eot');
+    src: url('../fonts/BROmegaVN-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BROmegaVN-BlackItalic.woff2') format('woff2'),
+        url('../fonts/BROmegaVN-BlackItalic.woff') format('woff'),
+        url('../fonts/BROmegaVN-BlackItalic.ttf') format('truetype'),
+        url('../fonts/BROmegaVN-BlackItalic.svg#BROmegaVN-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BR Omega';
+    src: url('../fonts/BROmegaVN-Black.eot');
+    src: url('../fonts/BROmegaVN-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/BROmegaVN-Black.woff2') format('woff2'),
+        url('../fonts/BROmegaVN-Black.woff') format('woff'),
+        url('../fonts/BROmegaVN-Black.ttf') format('truetype'),
+        url('../fonts/BROmegaVN-Black.svg#BROmegaVN-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI.eot');
+    src: url('SegoeUI.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI.woff2') format('woff2'),
+        url('SegoeUI.woff') format('woff'),
+        url('SegoeUI.ttf') format('truetype'),
+        url('SegoeUI.svg#SegoeUI') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-BoldItalic.eot');
+    src: url('SegoeUI-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-BoldItalic.woff2') format('woff2'),
+        url('SegoeUI-BoldItalic.woff') format('woff'),
+        url('SegoeUI-BoldItalic.ttf') format('truetype'),
+        url('SegoeUI-BoldItalic.svg#SegoeUI-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-Bold.eot');
+    src: url('SegoeUI-Bold.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-Bold.woff2') format('woff2'),
+        url('SegoeUI-Bold.woff') format('woff'),
+        url('SegoeUI-Bold.ttf') format('truetype'),
+        url('SegoeUI-Bold.svg#SegoeUI-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-Italic.eot');
+    src: url('SegoeUI-Italic.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-Italic.woff2') format('woff2'),
+        url('SegoeUI-Italic.woff') format('woff'),
+        url('SegoeUI-Italic.ttf') format('truetype'),
+        url('SegoeUI-Italic.svg#SegoeUI-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI-Semibold.eot');
+    src: url('SegoeUI-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-Semibold.woff2') format('woff2'),
+        url('SegoeUI-Semibold.woff') format('woff'),
+        url('SegoeUI-Semibold.ttf') format('truetype'),
+        url('SegoeUI-Semibold.svg#SegoeUI-Semibold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
