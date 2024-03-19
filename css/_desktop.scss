@@ -1756,35 +1756,80 @@ body {
           @media (max-width: 767px) {
             grid-template-columns: 2fr 2fr;
           }
-          .overview__service {
-            box-shadow: 2px 1px 12px rgba(0, 0, 0, 0.08);
-            border-radius: 8px;
-            padding: 16px 16px 20px 24px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: white;
-            &:hover {
-              background-color: #0071f0;
-              path {
-                fill: white;
+          .overview__tom {
+            position: relative;
+            .overview__service {
+              box-shadow: 2px 1px 12px rgba(0, 0, 0, 0.08);
+              border-radius: 8px;
+              padding: 16px 16px 20px 24px;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              background-color: white;
+              &:hover {
+                background-color: #0071f0;
+                path {
+                  fill: white;
+                }
+                .overview__you {
+                  &-one {
+                    color: white;
+                  }
+                }
               }
               .overview__you {
+                display: flex;
+                gap: 12px;
+                align-items: center;
                 &-one {
-                  color: white;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: #333333;
+                  @media (max-width: 992px) {
+                    font-size: 12px;
+                  }
                 }
               }
             }
-            .overview__you {
-              display: flex;
-              gap: 12px;
-              align-items: center;
-              &-one {
-                font-size: 16px;
-                line-height: 24px;
-                color: #333333;
-                @media (max-width: 992px) {
-                  font-size: 12px;
+            .overview__teen {
+              border-radius: 8px;
+              background-color: white;
+              box-shadow: 2px 1px 12px rgba(0, 0, 0, 0.08);
+              width: 149px;
+              position: absolute;
+              right: 0px;
+              top: 63px;
+              visibility: hidden;
+              z-index: 0;
+              &.open{
+                visibility: visible;
+                z-index: 1;
+              }
+              .overview__teen-one {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                padding: 15px 16px 8px 16px;
+                border-bottom: 1px solid #e6e6e6;
+                .overview__teen-text {
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: #333333;
+                }
+              }
+              .overview__teen-two {
+                display: flex;
+                gap: 8px;
+                align-items: center;
+                padding: 15px 16px 8px 16px;
+                .overview__teen-text {
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 16px;
+                  line-height: 24px;
+                  color: #333333;
                 }
               }
             }
@@ -4670,16 +4715,28 @@ body {
   .yourbookmark__max {
     .yourbookmark__header {
       padding-bottom: 28px;
+      @media(max-width:767px){
+        padding-bottom: 15px;
+      }
       .yourbookmark__top {
         display: flex;
         justify-content: space-between;
         padding-bottom: 12px;
+        @media(max-width:450px){
+          padding-bottom: 5px;
+        }
         .yourbookmark__top-text {
           font-style: normal;
           font-weight: 700;
           font-size: 24px;
           line-height: 36px;
           color: #1a1a1a;
+          @media(max-width:992px){
+            font-size: 21px;
+          }
+          @media(max-width:450px){
+            font-size: 16px;
+          }
         }
       }
       .yourbookmark__end {
@@ -4689,20 +4746,29 @@ body {
         background-color: #0071f0;
         border-radius: 8px;
         padding: 8px 24px;
+        @media(max-width:767px){
+          padding: 8px 12px;
+        }
         .yourbookmark__end-text {
           font-style: normal;
           font-weight: 700;
           font-size: 16px;
           line-height: 24px;
           color: #ffffff;
+          @media(max-width:992px){
+            font-size: 14px;
+          }
         }
       }
-      .yourbookmark__assets {
+      .yourbookmark__max-assets {
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
         line-height: 24px;
         color: #4d4d4d;
+        @media(max-width:992px){
+          font-size: 14px;
+        }
       }
     }
     .yourbookmark__all {
@@ -4710,16 +4776,32 @@ body {
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid #e6e6e6;
+      @media(max-width:450px){
+        display: block;
+        padding-bottom: 15px;
+      }
       .yourbookmark__menu {
         display: flex;
         gap: 24px;
         padding: 16px 0px;
+        @media(max-width:992px){
+          gap: 15px;
+        }
+        @media(max-width:767px){
+          gap: 10px;
+        }
+        @media(max-width:450px){
+          gap: 20px;
+        }
         .yourbookmark__menu-one {
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
           line-height: 24px;
           color: #4d4d4d;
+          @media(max-width:767px){
+            font-size: 14px;
+          }
           &:hover {
             font-style: normal;
             font-weight: 700;
@@ -4729,16 +4811,25 @@ body {
           }
         }
       }
-      .yourbookmark__center{
+      .yourbookmark__center {
         display: flex;
         gap: 24px;
-        select{
+        @media(max-width:992px){
+          gap: 10px;
+        }
+        @media(max-width:450px){
+          gap: 50px;
+        }
+        select {
           outline: none;
           border: 0;
+          @media(max-width:767px){
+            font-size: 14px;
+          }
         }
       }
     }
-     .yourbookmark__folder {
+    .yourbookmark__folder {
       padding-top: 36px;
       .yourbookmark__text {
         padding-bottom: 16px;
@@ -4790,6 +4881,188 @@ body {
                 color: #333333;
                 @media (max-width: 992px) {
                   font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .yourbookmark__files {
+      padding-top: 36px;
+      .yourbookmark__filestext {
+        padding-bottom: 16px;
+        .yourbookmark__filestext-one {
+          font-size: 16px;
+          line-height: 24px;
+          color: #b3b3b3;
+        }
+      }
+      .yourbookmark__video {
+        display: grid;
+        grid-gap: 30px;
+        @media (max-width: 450px) {
+          grid-gap: 20px;
+        }
+        .yourbookmark__bold {
+          display: grid;
+          grid-template-columns: 2fr 2fr 2fr 2fr;
+          grid-gap: 30px;
+          @media (max-width: 992px) {
+            grid-gap: 20px;
+          }
+          @media (max-width: 767px) {
+            grid-template-columns: 2fr 2fr;
+          }
+          @media (max-width: 450px) {
+            grid-template-columns: 2fr;
+          }
+          .yourbookmark__con {
+            box-shadow: 2px 1px 12px rgba(0, 0, 0, 0.08);
+            border-radius: 8px;
+            position: relative;
+            overflow: hidden;
+            .yourbookmark__img-video {
+              position: relative;
+              height: 145px;
+              &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: black;
+                opacity: 0.2;
+                z-index: 1;
+              }
+              .max {
+                width: 100%;
+                height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+              }
+            }
+            .play {
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              margin: auto;
+              z-index: 2;
+              @media (max-width: 992px) {
+                width: 40px;
+              }
+            }
+            .yourbookmark__img {
+              height: 145px;
+              position: relative;
+              width: 100%;
+              img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 100%;
+                width: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+              }
+            }
+            .yourbookmark__end {
+              display: flex;
+              gap: 18px;
+              align-items: center;
+              padding: 14px 16px;
+              @media (max-width: 992px) {
+                padding: 15px 0px 15px 15px;
+              }
+              .yourbookmark__meo {
+                .yourbookmark__meo-one {
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 20px;
+                  color: #1a1a1a;
+                }
+                .yourbookmark__min {
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  padding: 0px;
+                  gap: 8px;
+                  .yourbookmark__meo-two {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #808080;
+                  }
+                }
+              }
+            }
+            .yourbookmark__end-on {
+              display: flex;
+              gap: 18px;
+              align-items: center;
+              padding: 14px 16px;
+              border-top: 1px solid #f3f3f3;
+              @media (max-width: 992px) {
+                padding: 15px 0px 15px 15px;
+                gap: 10px;
+              }
+              &:hover {
+                background-color: #0071f0;
+                path {
+                  fill: white;
+                }
+                .overview__meo {
+                  .overview__meo-one {
+                    color: white;
+                    @media (max-width: 992px) {
+                      font-size: 12px;
+                    }
+                  }
+                  .overview__min {
+                    .overview__meo-two {
+                      color: white;
+                    }
+                  }
+                }
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+              }
+              .yourbookmark__meo {
+                .yourbookmark__meo-one {
+                  font-style: normal;
+                  font-weight: 400;
+                  font-size: 14px;
+                  line-height: 20px;
+                  color: #1a1a1a;
+                  @media (max-width: 992px) {
+                    font-size: 12px;
+                  }
+                }
+                .yourbookmark__min {
+                  display: flex;
+                  flex-direction: row;
+                  align-items: center;
+                  padding: 0px;
+                  gap: 8px;
+                  .overview__meo-two {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #808080;
+                  }
                 }
               }
             }

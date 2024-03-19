@@ -1976,7 +1976,10 @@ body {
     grid-template-columns: 2fr 2fr;
   }
 }
-.overview .overview__max .overview__folder .overview__name .overview__folders .overview__service {
+.overview .overview__max .overview__folder .overview__name .overview__folders .overview__tom {
+  position: relative;
+}
+.overview .overview__max .overview__folder .overview__name .overview__folders .overview__tom .overview__service {
   box-shadow: 2px 1px 12px rgba(0, 0, 0, 0.08);
   border-radius: 8px;
   padding: 16px 16px 20px 24px;
@@ -1985,29 +1988,71 @@ body {
   align-items: center;
   background-color: white;
 }
-.overview .overview__max .overview__folder .overview__name .overview__folders .overview__service:hover {
+.overview .overview__max .overview__folder .overview__name .overview__folders .overview__tom .overview__service:hover {
   background-color: #0071f0;
 }
-.overview .overview__max .overview__folder .overview__name .overview__folders .overview__service:hover path {
+.overview .overview__max .overview__folder .overview__name .overview__folders .overview__tom .overview__service:hover path {
   fill: white;
 }
-.overview .overview__max .overview__folder .overview__name .overview__folders .overview__service:hover .overview__you-one {
+.overview .overview__max .overview__folder .overview__name .overview__folders .overview__tom .overview__service:hover .overview__you-one {
   color: white;
 }
-.overview .overview__max .overview__folder .overview__name .overview__folders .overview__service .overview__you {
+.overview .overview__max .overview__folder .overview__name .overview__folders .overview__tom .overview__service .overview__you {
   display: flex;
   gap: 12px;
   align-items: center;
 }
-.overview .overview__max .overview__folder .overview__name .overview__folders .overview__service .overview__you-one {
+.overview .overview__max .overview__folder .overview__name .overview__folders .overview__tom .overview__service .overview__you-one {
   font-size: 16px;
   line-height: 24px;
   color: #333333;
 }
 @media (max-width: 992px) {
-  .overview .overview__max .overview__folder .overview__name .overview__folders .overview__service .overview__you-one {
+  .overview .overview__max .overview__folder .overview__name .overview__folders .overview__tom .overview__service .overview__you-one {
     font-size: 12px;
   }
+}
+.overview .overview__max .overview__folder .overview__name .overview__folders .overview__tom .overview__teen {
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 2px 1px 12px rgba(0, 0, 0, 0.08);
+  width: 149px;
+  position: absolute;
+  right: 0px;
+  top: 63px;
+  visibility: hidden;
+  z-index: 0;
+}
+.overview .overview__max .overview__folder .overview__name .overview__folders .overview__tom .overview__teen.open {
+  visibility: visible;
+  z-index: 1;
+}
+.overview .overview__max .overview__folder .overview__name .overview__folders .overview__tom .overview__teen .overview__teen-one {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 15px 16px 8px 16px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.overview .overview__max .overview__folder .overview__name .overview__folders .overview__tom .overview__teen .overview__teen-one .overview__teen-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
+}
+.overview .overview__max .overview__folder .overview__name .overview__folders .overview__tom .overview__teen .overview__teen-two {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 15px 16px 8px 16px;
+}
+.overview .overview__max .overview__folder .overview__name .overview__folders .overview__tom .overview__teen .overview__teen-two .overview__teen-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333333;
 }
 .overview .overview__max .overview__files {
   padding-top: 36px;
@@ -5089,10 +5134,20 @@ body {
 .yourbookmark .yourbookmark__max .yourbookmark__header {
   padding-bottom: 28px;
 }
+@media (max-width: 767px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__header {
+    padding-bottom: 15px;
+  }
+}
 .yourbookmark .yourbookmark__max .yourbookmark__header .yourbookmark__top {
   display: flex;
   justify-content: space-between;
   padding-bottom: 12px;
+}
+@media (max-width: 450px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__header .yourbookmark__top {
+    padding-bottom: 5px;
+  }
 }
 .yourbookmark .yourbookmark__max .yourbookmark__header .yourbookmark__top .yourbookmark__top-text {
   font-style: normal;
@@ -5100,6 +5155,16 @@ body {
   font-size: 24px;
   line-height: 36px;
   color: #1a1a1a;
+}
+@media (max-width: 992px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__header .yourbookmark__top .yourbookmark__top-text {
+    font-size: 21px;
+  }
+}
+@media (max-width: 450px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__header .yourbookmark__top .yourbookmark__top-text {
+    font-size: 16px;
+  }
 }
 .yourbookmark .yourbookmark__max .yourbookmark__header .yourbookmark__end {
   display: flex;
@@ -5109,6 +5174,11 @@ body {
   border-radius: 8px;
   padding: 8px 24px;
 }
+@media (max-width: 767px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__header .yourbookmark__end {
+    padding: 8px 12px;
+  }
+}
 .yourbookmark .yourbookmark__max .yourbookmark__header .yourbookmark__end .yourbookmark__end-text {
   font-style: normal;
   font-weight: 700;
@@ -5116,12 +5186,22 @@ body {
   line-height: 24px;
   color: #ffffff;
 }
-.yourbookmark .yourbookmark__max .yourbookmark__header .yourbookmark__assets {
+@media (max-width: 992px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__header .yourbookmark__end .yourbookmark__end-text {
+    font-size: 14px;
+  }
+}
+.yourbookmark .yourbookmark__max .yourbookmark__header .yourbookmark__max-assets {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #4d4d4d;
+}
+@media (max-width: 992px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__header .yourbookmark__max-assets {
+    font-size: 14px;
+  }
 }
 .yourbookmark .yourbookmark__max .yourbookmark__all {
   display: flex;
@@ -5129,10 +5209,31 @@ body {
   align-items: center;
   border-bottom: 1px solid #e6e6e6;
 }
+@media (max-width: 450px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__all {
+    display: block;
+    padding-bottom: 15px;
+  }
+}
 .yourbookmark .yourbookmark__max .yourbookmark__all .yourbookmark__menu {
   display: flex;
   gap: 24px;
   padding: 16px 0px;
+}
+@media (max-width: 992px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__all .yourbookmark__menu {
+    gap: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__all .yourbookmark__menu {
+    gap: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__all .yourbookmark__menu {
+    gap: 20px;
+  }
 }
 .yourbookmark .yourbookmark__max .yourbookmark__all .yourbookmark__menu .yourbookmark__menu-one {
   font-style: normal;
@@ -5140,6 +5241,11 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #4d4d4d;
+}
+@media (max-width: 767px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__all .yourbookmark__menu .yourbookmark__menu-one {
+    font-size: 14px;
+  }
 }
 .yourbookmark .yourbookmark__max .yourbookmark__all .yourbookmark__menu .yourbookmark__menu-one:hover {
   font-style: normal;
@@ -5152,9 +5258,24 @@ body {
   display: flex;
   gap: 24px;
 }
+@media (max-width: 992px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__all .yourbookmark__center {
+    gap: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__all .yourbookmark__center {
+    gap: 50px;
+  }
+}
 .yourbookmark .yourbookmark__max .yourbookmark__all .yourbookmark__center select {
   outline: none;
   border: 0;
+}
+@media (max-width: 767px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__all .yourbookmark__center select {
+    font-size: 14px;
+  }
 }
 .yourbookmark .yourbookmark__max .yourbookmark__folder {
   padding-top: 36px;
@@ -5218,4 +5339,196 @@ body {
   .yourbookmark .yourbookmark__max .yourbookmark__folder .yourbookmark__name .yourbookmark__folders .yourbookmark__service .yourbookmark__you-one {
     font-size: 12px;
   }
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files {
+  padding-top: 36px;
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__filestext {
+  padding-bottom: 16px;
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__filestext .yourbookmark__filestext-one {
+  font-size: 16px;
+  line-height: 24px;
+  color: #b3b3b3;
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video {
+  display: grid;
+  grid-gap: 30px;
+}
+@media (max-width: 450px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video {
+    grid-gap: 20px;
+  }
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-gap: 30px;
+}
+@media (max-width: 992px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold {
+    grid-gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold {
+    grid-template-columns: 2fr 2fr;
+  }
+}
+@media (max-width: 450px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold {
+    grid-template-columns: 2fr;
+  }
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con {
+  box-shadow: 2px 1px 12px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__img-video {
+  position: relative;
+  height: 145px;
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__img-video::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0.2;
+  z-index: 1;
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__img-video .max {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .play {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
+}
+@media (max-width: 992px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .play {
+    width: 40px;
+  }
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__img {
+  height: 145px;
+  position: relative;
+  width: 100%;
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__end {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding: 14px 16px;
+}
+@media (max-width: 992px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__end {
+    padding: 15px 0px 15px 15px;
+  }
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__end .yourbookmark__meo .yourbookmark__meo-one {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1a1a1a;
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__end .yourbookmark__meo .yourbookmark__min {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__end .yourbookmark__meo .yourbookmark__min .yourbookmark__meo-two {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #808080;
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__end-on {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding: 14px 16px;
+  border-top: 1px solid #f3f3f3;
+}
+@media (max-width: 992px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__end-on {
+    padding: 15px 0px 15px 15px;
+    gap: 10px;
+  }
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__end-on:hover {
+  background-color: #0071f0;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__end-on:hover path {
+  fill: white;
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__end-on:hover .overview__meo .overview__meo-one {
+  color: white;
+}
+@media (max-width: 992px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__end-on:hover .overview__meo .overview__meo-one {
+    font-size: 12px;
+  }
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__end-on:hover .overview__meo .overview__min .overview__meo-two {
+  color: white;
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__end-on .yourbookmark__meo .yourbookmark__meo-one {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1a1a1a;
+}
+@media (max-width: 992px) {
+  .yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__end-on .yourbookmark__meo .yourbookmark__meo-one {
+    font-size: 12px;
+  }
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__end-on .yourbookmark__meo .yourbookmark__min {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+}
+.yourbookmark .yourbookmark__max .yourbookmark__files .yourbookmark__video .yourbookmark__bold .yourbookmark__con .yourbookmark__end-on .yourbookmark__meo .yourbookmark__min .overview__meo-two {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #808080;
 }/*# sourceMappingURL=style.css.map */
