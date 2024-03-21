@@ -70,7 +70,7 @@
         </div>
       </div>
     </div>
-    <div class="bannerpopular d-flex align-items-center">
+    <div class="banner d-flex align-items-center">
       <div class="banner-img">
         <img src="img/bannerimg.png" alt="" />
       </div>
@@ -78,7 +78,7 @@
         <div class="d-flex justify-content-center">
           <div class="banner__max">
             <div class="banner__top">
-              <div class="banner__top-two">Image Assets</div>
+              <div class="banner__top-two">Popular Assets</div>
               <div class="banner__top-one">
                 Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod
                 tempor adipiscing Lorem ipsum dolor sit amet, consectetur elit,
@@ -99,94 +99,126 @@
               <div class="banner__min-trong">
                 <span></span>
               </div>
-              <div class="banner__input">
-                <input
-                  type="text"
-                  placeholder="Logistic"
-                />
-                <div class="banner__input-one">
-                  <svg
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M19.1944 4.80561C19.4873 5.0985 19.4873 5.57337 19.1944 5.86627L5.86597 19.1947C5.57307 19.4876 5.0982 19.4876 4.80531 19.1947C4.51241 18.9018 4.51241 18.4269 4.80531 18.134L18.1337 4.80561C18.4266 4.51271 18.9015 4.51271 19.1944 4.80561Z"
-                      fill="#333333"
-                    />
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M19.1944 19.1947C18.9015 19.4876 18.4266 19.4876 18.1337 19.1947L4.80531 5.86627C4.51241 5.57337 4.51241 5.0985 4.80531 4.80561C5.0982 4.51271 5.57307 4.51271 5.86597 4.80561L19.1944 18.134C19.4873 18.4269 19.4873 18.9018 19.1944 19.1947Z"
-                      fill="#333333"
-                    />
-                  </svg>
-                </div>
-              </div>
+              <input
+                type="text"
+                class="banner__min-two"
+                placeholder="Find anything you need"
+              />
               <button class="banner__min-three">
                 <img src="./img/outlined.svg" alt="" />
+                <div class="banner__text">Search</div>
               </button>
             </div>
             <div class="banner__most">
               <div class="banner__most-text">Most search:</div>
               <ul class="banner__fpt">
-                <li class="banner__fpt-one">FPT</li>
-                <li class="banner__fpt-one">FPT Software</li>
-                <li class="banner__fpt-one">FPT Software Branding</li>
-                <li class="banner__fpt-one">Akajob</li>
+                <li class="banner__fpt-onee">FPT</li>
+                <li class="banner__fpt-onee">FPT Software</li>
+                <li class="banner__fpt-onee">FPT Software Branding</li>
+                <li class="banner__fpt-onee">Akajob</li>
               </ul>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="name">
+     <div class="document__list">
       <div class="container">
-        <div class="overview__max">
-          <div class="overview__top">
-            <div class="overview__menu">
-              <div class="overview__menu-one">Image</div>
+        <div class="document__max">
+          <div class="document__top">
+            <div class="document__menu">
+              <div class="document__menu-one">Document</div>
             </div>
-            <div class="overview__tong">
-              <select
-                class="bannerpopular__min-one"
-                id="floatingSelect"
-                aria-label="Floating label select example"
-              >
-                <option class="one" selected>Filter</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
+            <div class="document__tong">
+              <div class="document__cha">
+                <div class="document__chahill">
+                  <div class="document__chahill-text">Filter</div>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.8507 7.03258L8.53412 9.81664C8.48719 9.87304 8.42844 9.91843 8.36201 9.94957C8.29558 9.98072 8.22311 9.99687 8.14974 9.99687C8.07637 9.99687 8.00391 9.98072 7.93748 9.94957C7.87105 9.91843 7.81229 9.87304 7.76537 9.81664L5.44881 7.03258C5.38809 6.95957 5.34943 6.87078 5.33733 6.7766C5.32523 6.68241 5.3402 6.58673 5.38049 6.50075C5.42078 6.41476 5.48472 6.34203 5.56483 6.29105C5.64494 6.24007 5.73791 6.21296 5.83287 6.21289H10.4666C10.5616 6.21296 10.6545 6.24007 10.7347 6.29105C10.8148 6.34203 10.8787 6.41476 10.919 6.50075C10.9593 6.58673 10.9743 6.68241 10.9622 6.7766C10.9501 6.87078 10.9114 6.95957 10.8507 7.03258Z"
+                      fill="#4D4D4D"
+                    />
+                  </svg>
+                </div>
+                <div class="document__dropdown">
+                  <div class="document__foating">
+                    <label for="floatingSelect">Owner</label>
+                    <select
+                      class="form-select"
+                      id="floatingSelect"
+                      aria-label="Floating label select example"
+                    >
+                      <option selected="">Everyone</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="document__foating">
+                    <label for="floatingSelect">Last edited</label>
+                    <select
+                      class="form-select"
+                      id="floatingSelect"
+                      aria-label="Floating label select example"
+                    >
+                      <option selected="">Everytime</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="document__foating">
+                    <label for="floatingSelect">Type</label>
+                    <select
+                      class="form-select"
+                      id="floatingSelect"
+                      aria-label="Floating label select example"
+                    >
+                      <option selected="">PDF</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <div class="document__flex">
+                      <button class="button__white">Clear document</button>
+                      <button class="button__blue">Apply</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <img src="./img/buttext.svg" alt="" />
-              <div class="overview__button">
+              <div class="document__button">
                 <img src="./img/hihi.svg" alt="" />
-                <div class="overview__button-text">Download All</div>
+                <div class="document__button-text">Download All</div>
               </div>
             </div>
           </div>
-          <div class="overview__last">
-            <div class="overview__chillmax">
-              <div class="overview__chill">
-                <div class="overview__chill-one">Name</div>
+          <div class="document__last">
+            <div class="document__chillmax">
+              <div class="document__chill">
+                <div class="document__chill-one">Name</div>
                 <img src="./img/muitenxuong.svg" alt="" />
               </div>
-              <div class="overview__centermax">
-                <div class="overview__center">
-                  <div class="overview__center-one">Last edited</div>
+              <div class="document__centermax">
+                <div class="document__center">
+                  <div class="document__center-one">Last edited</div>
                   <img src="./img/muitenlen.svg" alt="" />
                 </div>
               </div>
-              <div class="overview__end">
-                <div class="overview__end-one">Size</div>
+              <div class="document__end">
+                <div class="document__end-one">Size</div>
               </div>
             </div>
-            <div class="overview__date">
-              <div class="overview__folders">
+            <div class="document__date">
+              <div class="document__folders">
                 <svg
                   width="24"
                   height="24"
@@ -197,23 +229,23 @@
                   <path
                     d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
                     fill="#666666"
-                  />
+                  ></path>
                   <path
                     d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
                     fill="#999999"
-                  />
+                  ></path>
                 </svg>
-                <div class="overview__folders-one">Name folders</div>
+                <div class="document__folders-one">Name folders</div>
               </div>
-              <div class="overview__monday">
-                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              <div class="document__monday">
+                <div class="document__monday-one">6:00 - 23/9/2021</div>
               </div>
-              <div class="overview__sunday">
-                <div class="overview__sunday-one">---</div>
+              <div class="document__sunday">
+                <div class="document__sunday-one">---</div>
               </div>
             </div>
-            <div class="overview__date">
-              <div class="overview__folders">
+            <div class="document__date">
+              <div class="document__folders">
                 <svg
                   width="24"
                   height="24"
@@ -224,23 +256,23 @@
                   <path
                     d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
                     fill="#666666"
-                  />
+                  ></path>
                   <path
                     d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
                     fill="#999999"
-                  />
+                  ></path>
                 </svg>
-                <div class="overview__folders-one">Name folders</div>
+                <div class="document__folders-one">Name folders</div>
               </div>
-              <div class="overview__monday">
-                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              <div class="document__monday">
+                <div class="document__monday-one">10/28/12</div>
               </div>
-              <div class="overview__sunday">
-                <div class="overview__sunday-one">---</div>
+              <div class="document__sunday">
+                <div class="document__sunday-one">---</div>
               </div>
             </div>
-            <div class="overview__date">
-              <div class="overview__folders">
+            <div class="document__date">
+              <div class="document__folders">
                 <svg
                   width="24"
                   height="24"
@@ -251,23 +283,23 @@
                   <path
                     d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
                     fill="#666666"
-                  />
+                  ></path>
                   <path
                     d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
                     fill="#999999"
-                  />
+                  ></path>
                 </svg>
-                <div class="overview__folders-one">Name folders</div>
+                <div class="document__folders-one">Name folders</div>
               </div>
-              <div class="overview__monday">
-                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              <div class="document__monday">
+                <div class="document__monday-one">8/15/17</div>
               </div>
-              <div class="overview__sunday">
-                <div class="overview__sunday-one">---</div>
+              <div class="document__sunday">
+                <div class="document__sunday-one">---</div>
               </div>
             </div>
-            <div class="overview__date">
-              <div class="overview__folders">
+            <div class="document__date">
+              <div class="document__folders">
                 <svg
                   width="24"
                   height="24"
@@ -278,23 +310,23 @@
                   <path
                     d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
                     fill="#666666"
-                  />
+                  ></path>
                   <path
                     d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
                     fill="#999999"
-                  />
+                  ></path>
                 </svg>
-                <div class="overview__folders-one">Name folders</div>
+                <div class="document__folders-one">Name folders</div>
               </div>
-              <div class="overview__monday">
-                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              <div class="document__monday">
+                <div class="document__monday-one">5/27/15</div>
               </div>
-              <div class="overview__sunday">
-                <div class="overview__sunday-one">---</div>
+              <div class="document__sunday">
+                <div class="document__sunday-one">---</div>
               </div>
             </div>
-            <div class="overview__date">
-              <div class="overview__folders">
+            <div class="document__date">
+              <div class="document__folders">
                 <svg
                   width="24"
                   height="24"
@@ -305,156 +337,144 @@
                   <path
                     d="M1.51316 2.58594H7.25295C7.62886 2.58594 7.97608 2.78673 8.16366 3.11248L9.10835 4.40301C9.29592 4.72875 9.64319 4.92955 10.0191 4.92955H23.9999V19.6637C23.9999 20.4375 23.3726 21.0648 22.5988 21.0648H1.40117C0.627351 21.0648 0 20.4375 0 19.6637V6.56401C0 5.48095 0.167331 4.40434 0.4961 3.37237C0.616537 2.90922 1.03463 2.58594 1.51316 2.58594Z"
                     fill="#666666"
-                  />
+                  ></path>
                   <path
                     d="M22.9491 3.28516H17.165C16.7537 3.28516 16.3801 3.52516 16.2092 3.89928L15.2194 6.06547C15.0484 6.43959 14.6749 6.6796 14.2636 6.6796H0V20.0125C0 20.7864 0.627351 21.4137 1.40117 21.4137H22.5988C23.3727 21.4137 24 20.7864 24 20.0125V4.33604C24 3.75568 23.5295 3.28516 22.9491 3.28516Z"
                     fill="#999999"
-                  />
+                  ></path>
                 </svg>
-                <div class="overview__folders-one">Name folders</div>
+                <div class="document__folders-one">Name folders</div>
               </div>
-              <div class="overview__monday">
-                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              <div class="document__monday">
+                <div class="document__monday-one">8/15/17</div>
               </div>
-              <div class="overview__sunday">
-                <div class="overview__sunday-one">---</div>
-              </div>
-            </div>
-            <div class="overview__dateok">
-              <div class="overview__foldersok">
-                <img src="./img/mini.png" alt="" />
-                <div class="overview__folders-one">Name folders</div>
-              </div>
-              <div class="overview__monday">
-                <div class="overview__monday-one">6:00 - 23/9/2021</div>
-              </div>
-              <div class="overview__sunday">
-                <div class="overview__sunday-one">1.45 Mb</div>
+              <div class="document__sunday">
+                <div class="document__sunday-one">---</div>
               </div>
             </div>
-            <div class="overview__dateok">
-              <div class="overview__foldersok">
+            <div class="document__dateok">
+              <div class="document__foldersok">
                 <img src="./img/mini.png" alt="" />
-                <div class="overview__folders-one">Name folders</div>
+                <div class="document__folders-one">Name folders</div>
               </div>
-              <div class="overview__monday">
-                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              <div class="document__monday">
+                <div class="document__monday-one">6:00 - 23/9/2021</div>
               </div>
-              <div class="overview__sunday">
-                <div class="overview__sunday-one">1.45 Mb</div>
+              <div class="document__sunday">
+                <div class="document__sunday-one">1.45 Mb</div>
               </div>
             </div>
-            <div class="overview__dateok">
-              <div class="overview__foldersok">
+            <div class="document__dateok">
+              <div class="document__foldersok">
                 <img src="./img/mini.png" alt="" />
-                <div class="overview__folders-one">Name folders</div>
+                <div class="document__folders-one">Name folders</div>
               </div>
-              <div class="overview__monday">
-                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              <div class="document__monday">
+                <div class="document__monday-one">6:00 - 23/9/2021</div>
               </div>
-              <div class="overview__sunday">
-                <div class="overview__sunday-one">1.45 Mb</div>
+              <div class="document__sunday">
+                <div class="document__sunday-one">1.45 Mb</div>
               </div>
             </div>
-            <div class="overview__dateok">
-              <div class="overview__foldersok">
+            <div class="document__dateok">
+              <div class="document__foldersok">
                 <img src="./img/mini.png" alt="" />
-                <div class="overview__folders-one">Name folders</div>
+                <div class="document__folders-one">Name folders</div>
               </div>
-              <div class="overview__monday">
-                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              <div class="document__monday">
+                <div class="document__monday-one">6:00 - 23/9/2021</div>
               </div>
-              <div class="overview__sunday">
-                <div class="overview__sunday-one">1.45 Mb</div>
+              <div class="document__sunday">
+                <div class="document__sunday-one">1.45 Mb</div>
               </div>
             </div>
-            <div class="overview__dateok">
-              <div class="overview__foldersok">
+            <div class="document__dateok">
+              <div class="document__foldersok">
                 <img src="./img/mini.png" alt="" />
-                <div class="overview__folders-one">Name folders</div>
+                <div class="document__folders-one">Name folders</div>
               </div>
-              <div class="overview__monday">
-                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              <div class="document__monday">
+                <div class="document__monday-one">6:00 - 23/9/2021</div>
               </div>
-              <div class="overview__sunday">
-                <div class="overview__sunday-one">1.45 Mb</div>
+              <div class="document__sunday">
+                <div class="document__sunday-one">1.45 Mb</div>
               </div>
             </div>
-            <div class="overview__dateok">
-              <div class="overview__foldersok">
+            <div class="document__dateok">
+              <div class="document__foldersok">
                 <img src="./img/mini.png" alt="" />
-                <div class="overview__folders-one">Name folders</div>
+                <div class="document__folders-one">Name folders</div>
               </div>
-              <div class="overview__monday">
-                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              <div class="document__monday">
+                <div class="document__monday-one">6:00 - 23/9/2021</div>
               </div>
-              <div class="overview__sunday">
-                <div class="overview__sunday-one">1.45 Mb</div>
+              <div class="document__sunday">
+                <div class="document__sunday-one">1.45 Mb</div>
               </div>
             </div>
-            <div class="overview__dateok">
-              <div class="overview__foldersok">
+            <div class="document__dateok">
+              <div class="document__foldersok">
                 <img src="./img/mini.png" alt="" />
-                <div class="overview__folders-one">Name folders</div>
+                <div class="document__folders-one">Name folders</div>
               </div>
-              <div class="overview__monday">
-                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              <div class="document__monday">
+                <div class="document__monday-one">6:00 - 23/9/2021</div>
               </div>
-              <div class="overview__sunday">
-                <div class="overview__sunday-one">1.45 Mb</div>
+              <div class="document__sunday">
+                <div class="document__sunday-one">1.45 Mb</div>
               </div>
             </div>
-            <div class="overview__dateok">
-              <div class="overview__foldersok">
+            <div class="document__dateok">
+              <div class="document__foldersok">
                 <img src="./img/mini.png" alt="" />
-                <div class="overview__folders-one">Name folders</div>
+                <div class="document__folders-one">Name folders</div>
               </div>
-              <div class="overview__monday">
-                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              <div class="document__monday">
+                <div class="document__monday-one">6:00 - 23/9/2021</div>
               </div>
-              <div class="overview__sunday">
-                <div class="overview__sunday-one">1.45 Mb</div>
+              <div class="document__sunday">
+                <div class="document__sunday-one">1.45 Mb</div>
               </div>
             </div>
-            <div class="overview__dateok">
-              <div class="overview__foldersok">
+            <div class="document__dateok">
+              <div class="document__foldersok">
                 <img src="./img/mini.png" alt="" />
-                <div class="overview__folders-one">Name folders</div>
+                <div class="document__folders-one">Name folders</div>
               </div>
-              <div class="overview__monday">
-                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              <div class="document__monday">
+                <div class="document__monday-one">6:00 - 23/9/2021</div>
               </div>
-              <div class="overview__sunday">
-                <div class="overview__sunday-one">1.45 Mb</div>
+              <div class="document__sunday">
+                <div class="document__sunday-one">1.45 Mb</div>
               </div>
             </div>
-            <div class="overview__dateok">
-              <div class="overview__foldersok">
+            <div class="document__dateok">
+              <div class="document__foldersok">
                 <img src="./img/mini.png" alt="" />
-                <div class="overview__folders-one">Name folders</div>
+                <div class="document__folders-one">Name folders</div>
               </div>
-              <div class="overview__monday">
-                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              <div class="document__monday">
+                <div class="document__monday-one">6:00 - 23/9/2021</div>
               </div>
-              <div class="overview__sunday">
-                <div class="overview__sunday-one">1.45 Mb</div>
+              <div class="document__sunday">
+                <div class="document__sunday-one">1.45 Mb</div>
               </div>
             </div>
-            <div class="overview__dateok">
-              <div class="overview__foldersok">
+            <div class="document__dateok">
+              <div class="document__foldersok">
                 <img src="./img/mini.png" alt="" />
-                <div class="overview__folders-one">Name folders</div>
+                <div class="document__folders-one">Name folders</div>
               </div>
-              <div class="overview__monday">
-                <div class="overview__monday-one">6:00 - 23/9/2021</div>
+              <div class="document__monday">
+                <div class="document__monday-one">6:00 - 23/9/2021</div>
               </div>
-              <div class="overview__sunday">
-                <div class="overview__sunday-one">1.45 Mb</div>
+              <div class="document__sunday">
+                <div class="document__sunday-one">1.45 Mb</div>
               </div>
             </div>
             <div class="d-flex justify-content-center">
-              <div class="overview__loadmore">
-                <div class="overview__loadmore-text">Load more</div>
+              <div class="document__loadmore">
+                <div class="document__loadmore-text">Load more</div>
                 <img src="./img/xuong.svg" alt="" />
               </div>
             </div>
@@ -462,6 +482,13 @@
         </div>
       </div>
     </div>
+    <script>
+      $(document).ready(function () {
+        $(document).on("click", ".document__chahill", function () {
+          $(".document__dropdown").toggleClass("open");
+        });
+      });
+    </script>
     <div class="recommended">
       <div class="container">
         <div class="popular__max">
@@ -670,16 +697,42 @@
               </div>
             </div>
             <div class="swiper__button">
-              <img
+              <svg
                 class="swiper__button-left"
-                src="./img/buttontrai.svg"
-                alt=""
-              />
-              <img
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle cx="20" cy="20" r="20" fill="#CCCCCC" />
+                <g opacity="0.6">
+                  <path
+                    d="M15.3487 20.736L21.4801 26.3722C21.5808 26.4657 21.7006 26.54 21.8326 26.5906C21.9646 26.6412 22.1062 26.6673 22.2492 26.6673C22.3922 26.6673 22.5338 26.6412 22.6658 26.5906C22.7978 26.54 22.9176 26.4657 23.0183 26.3722C23.2201 26.1853 23.3333 25.9325 23.3333 25.669C23.3333 25.4054 23.2201 25.1526 23.0183 24.9657L17.6561 19.9778L23.0183 15.0398C23.2201 14.8529 23.3333 14.6001 23.3333 14.3365C23.3333 14.073 23.2201 13.8202 23.0183 13.6333C22.918 13.539 22.7984 13.464 22.6663 13.4126C22.5343 13.3613 22.3925 13.3345 22.2492 13.334C22.1059 13.3345 21.9641 13.3613 21.8321 13.4126C21.7 13.464 21.5804 13.539 21.4801 13.6333L15.3487 19.2695C15.2388 19.3629 15.151 19.4763 15.091 19.6025C15.031 19.7287 15 19.865 15 20.0027C15 20.1405 15.031 20.2768 15.091 20.403C15.151 20.5292 15.2388 20.6425 15.3487 20.736Z"
+                    fill="white"
+                  />
+                </g>
+              </svg>
+              <svg
                 class="swiper__button-right"
-                src="./img/buttonphai.svg"
-                alt=""
-              />
+                width="40"
+                height="40"
+                viewBox="0 0 40 40"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <circle
+                  cx="20"
+                  cy="20"
+                  r="20"
+                  transform="rotate(180 20 20)"
+                  fill="#CCCCCC"
+                />
+                <path
+                  d="M24.6513 19.264L18.5199 13.6278C18.4192 13.5343 18.2994 13.46 18.1674 13.4094C18.0354 13.3588 17.8938 13.3327 17.7508 13.3327C17.6078 13.3327 17.4662 13.3588 17.3342 13.4094C17.2022 13.46 17.0824 13.5343 16.9817 13.6278C16.7799 13.8147 16.6667 14.0675 16.6667 14.3311C16.6667 14.5946 16.7799 14.8474 16.9817 15.0343L22.3439 20.0222L16.9817 24.9602C16.7799 25.1471 16.6667 25.3999 16.6667 25.6635C16.6667 25.927 16.7799 26.1798 16.9817 26.3667C17.082 26.461 17.2016 26.536 17.3337 26.5874C17.4657 26.6387 17.6075 26.6655 17.7508 26.666C17.8941 26.6655 18.0359 26.6387 18.1679 26.5874C18.3 26.536 18.4196 26.461 18.5199 26.3667L24.6513 20.7305C24.7612 20.6371 24.849 20.5237 24.909 20.3975C24.969 20.2713 25 20.135 25 19.9973C25 19.8595 24.969 19.7232 24.909 19.597C24.849 19.4708 24.7612 19.3575 24.6513 19.264Z"
+                  fill="white"
+                />
+              </svg>
             </div>
           </div>
 

@@ -144,29 +144,71 @@
               <div class="yourbookmark__menu-one">Folder</div>
               <div class="yourbookmark__menu-one">Other</div>
             </div>
-            <div class="yourbookmark__center">
-              <select
-                class=""
-                id="floatingSelect"
-                aria-label="Floating label select example"
-                fdprocessedid="n5g7t"
-              >
-                <option class="one" selected="">Filter</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
-              <select
-                class=""
-                id="floatingSelect"
-                aria-label="Floating label select example"
-                fdprocessedid="n5g7t"
-              >
-                <option class="one" selected="">Most recent edited</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-              </select>
+            <div class="yourbookmark__tong">
+              <div class="yourbookmark__cha">
+                <div class="yourbookmark__chahill">
+                  <div class="yourbookmark__chahill-text">Filter</div>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.8507 7.03258L8.53412 9.81664C8.48719 9.87304 8.42844 9.91843 8.36201 9.94957C8.29558 9.98072 8.22311 9.99687 8.14974 9.99687C8.07637 9.99687 8.00391 9.98072 7.93748 9.94957C7.87105 9.91843 7.81229 9.87304 7.76537 9.81664L5.44881 7.03258C5.38809 6.95957 5.34943 6.87078 5.33733 6.7766C5.32523 6.68241 5.3402 6.58673 5.38049 6.50075C5.42078 6.41476 5.48472 6.34203 5.56483 6.29105C5.64494 6.24007 5.73791 6.21296 5.83287 6.21289H10.4666C10.5616 6.21296 10.6545 6.24007 10.7347 6.29105C10.8148 6.34203 10.8787 6.41476 10.919 6.50075C10.9593 6.58673 10.9743 6.68241 10.9622 6.7766C10.9501 6.87078 10.9114 6.95957 10.8507 7.03258Z"
+                      fill="#4D4D4D"
+                    />
+                  </svg>
+                </div>
+                <div class="yourbookmark__dropdown">
+                  <div class="yourbookmark__foating">
+                    <label for="floatingSelect">Owner</label>
+                    <select
+                      class="form-select"
+                      id="floatingSelect"
+                      aria-label="Floating label select example"
+                    >
+                      <option selected="">Everyone</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="yourbookmark__foating">
+                    <label for="floatingSelect">Last edited</label>
+                    <select
+                      class="form-select"
+                      id="floatingSelect"
+                      aria-label="Floating label select example"
+                    >
+                      <option selected="">Everytime</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="yourbookmark__foating">
+                    <label for="floatingSelect">Type</label>
+                    <select
+                      class="form-select"
+                      id="floatingSelect"
+                      aria-label="Floating label select example"
+                    >
+                      <option selected="">PDF</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                  <div class="d-flex justify-content-end">
+                    <div class="yourbookmark__flex">
+                      <button class="button__white">Clear yourbookmark</button>
+                      <button class="button__blue">Apply</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <svg
                 width="41"
                 height="40"
@@ -426,8 +468,6 @@
                     ></path>
                   </svg>
                 </div>
-              </div>
-              <div class="yourbookmark__folders">
                 <div class="yourbookmark__service">
                   <div class="yourbookmark__you">
                     <svg
@@ -642,8 +682,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="yourbookmark__bold">
+              
                 <div class="yourbookmark__con">
                   <div class="yourbookmark__img">
                     <img src="./img/hello4.png" alt="" />
@@ -708,8 +747,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="yourbookmark__bold">
+              
                 <div class="yourbookmark__con">
                   <div class="yourbookmark__img">
                     <img src="./img/hello8.png" alt="" />
@@ -780,6 +818,13 @@
         </div>
       </div>
     </div>
+    <script>
+      $(document).ready(function () {
+        $(document).on("click", ".yourbookmark__chahill", function () {
+          $(".yourbookmark__dropdown").toggleClass("open");
+        });
+      });
+    </script>
     <div class="recommended">
       <div class="container">
         <div class="popular__max">
